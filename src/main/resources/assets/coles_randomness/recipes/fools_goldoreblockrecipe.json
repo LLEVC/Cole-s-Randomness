@@ -1,0 +1,42 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "1": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "2": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "3": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "4": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "5": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "6": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "7": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "8": {
+      "item": "coles_randomness:fools_goldingot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:fools_goldoreblock",
+    "count": 1
+  }
+}

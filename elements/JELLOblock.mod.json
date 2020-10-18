@@ -1,0 +1,25 @@
+{
+  "_fv": 10,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "jello block edible",
+    "customModelName": "Normal",
+    "name": "Edable jello block",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "FOOD"
+    },
+    "stackSize": 8,
+    "nutritionalValue": 4,
+    "saturation": 0.30000001192092896,
+    "eatingSpeed": 2000,
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false,
+    "onEaten": {
+      "name": "JELLOblockFoodEaten"
+    }
+  }
+}

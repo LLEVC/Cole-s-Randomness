@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "coles_randomness:godsdimension_portal_ew"
+    },
+    "axis=x": {
+      "model": "coles_randomness:godsdimension_portal_ns"
+    },
+    "inventory": {
+      "model": "coles_randomness:godsdimension_portal_ns"
+    }
+  }
+}

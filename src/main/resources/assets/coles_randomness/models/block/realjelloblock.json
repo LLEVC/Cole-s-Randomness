@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coles_randomness:blocks/jello block",
+    "up": "coles_randomness:blocks/jello block",
+    "north": "coles_randomness:blocks/jello block",
+    "east": "coles_randomness:blocks/jello block",
+    "south": "coles_randomness:blocks/jello block",
+    "west": "coles_randomness:blocks/jello block",
+    "particle": "coles_randomness:blocks/jello block"
+  }
+}

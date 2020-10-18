@@ -1,0 +1,47 @@
+{
+  "_fv": 10,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "normal_dart",
+    "customModelName": "giant_dart:default",
+    "name": "Giant Dart",
+    "specialInfo": [
+      "Beeg Beeg Dart"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:OpCreativeItems"
+    },
+    "stackSize": 64,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": true,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 100.0,
+    "bulletPower": 2.0,
+    "bulletDamage": 300.0,
+    "bulletKnockback": 0,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "ModelProjectileBig",
+    "customBulletModelTexture": "projectilebig.png",
+    "onBulletHitsBlock": {
+      "name": "BigDartBulletHitsLivingEntity"
+    },
+    "onBulletHitsPlayer": {
+      "name": "BigDartBulletHitsLivingEntity"
+    },
+    "onBulletHitsEntity": {
+      "name": "BigDartBulletHitsLivingEntity"
+    }
+  }
+}

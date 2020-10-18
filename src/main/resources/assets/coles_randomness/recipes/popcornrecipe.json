@@ -1,0 +1,31 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:singlepopcorn"
+    },
+    {
+      "item": "coles_randomness:popcornempty"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:popcorn",
+    "count": 1
+  }
+}

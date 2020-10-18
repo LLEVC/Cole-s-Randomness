@@ -1,0 +1,50 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "1": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "2": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "3": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "5": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "6": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "7": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    },
+    "8": {
+      "item": "minecraft:quartz_block",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "coles_randomness:wat",
+    "count": 1
+  }
+}

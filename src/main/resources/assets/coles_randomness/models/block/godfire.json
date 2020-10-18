@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coles_randomness:blocks/chair is blue",
+    "up": "coles_randomness:blocks/fist top and bottom",
+    "north": "coles_randomness:blocks/god's fire",
+    "east": "coles_randomness:blocks/god's fire",
+    "south": "coles_randomness:blocks/god's fire",
+    "west": "coles_randomness:blocks/god's fire",
+    "particle": "coles_randomness:blocks/chair is blue"
+  }
+}

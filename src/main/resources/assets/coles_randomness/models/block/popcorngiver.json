@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coles_randomness:blocks/popcorn_maker_1",
+    "particle": "coles_randomness:blocks/popcorn_maker_1"
+  }
+}

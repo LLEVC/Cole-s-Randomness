@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "chair is blue",
+        "1": "chair is wood"
+      },
+      "name": "default"
+    }
+  }
+}

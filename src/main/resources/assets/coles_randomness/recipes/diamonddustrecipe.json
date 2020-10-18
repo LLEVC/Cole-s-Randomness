@@ -1,0 +1,16 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:orechisle"
+    },
+    {
+      "item": "minecraft:diamond"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:dusteddiamonddust",
+    "count": 4
+  }
+}

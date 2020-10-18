@@ -1,0 +1,47 @@
+{
+  "Cole ok": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "coles_randomness:untitled",
+        "stream": false
+      }
+    ]
+  },
+  "dead": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "coles_randomness:die",
+        "stream": false
+      }
+    ]
+  },
+  "hurt": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "coles_randomness:hurt",
+        "stream": false
+      }
+    ]
+  },
+  "Emm OK": {
+    "category": "hostile",
+    "sounds": [
+      {
+        "name": "coles_randomness:emm ok",
+        "stream": false
+      }
+    ]
+  },
+  "calm4_beta": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "coles_randomness:alm4",
+        "stream": true
+      }
+    ]
+  }
+}

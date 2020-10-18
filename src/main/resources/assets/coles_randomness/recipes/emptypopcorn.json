@@ -1,0 +1,17 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:wooden_shovel"
+    },
+    {
+      "item": "minecraft:wool",
+      "data": 14
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:popcornempty",
+    "count": 1
+  }
+}

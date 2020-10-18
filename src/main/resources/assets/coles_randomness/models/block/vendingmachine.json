@@ -1,0 +1,8 @@
+{
+  "parent": "coles_randomness:custom/f56b3dbb-5e24-4590-ad4d-86d1d53dd007",
+  "textures": {
+    "all": "coles_randomness:blocks/8486b610-825e-4b60-856e-dbcb34d9bfc4",
+    "particle": "coles_randomness:blocks/8486b610-825e-4b60-856e-dbcb34d9bfc4",
+    "0": "coles_randomness:blocks/8486b610-825e-4b60-856e-dbcb34d9bfc4"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:empty"
+    },
+    "1": {
+      "item": "coles_randomness:powerball"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:full",
+    "count": 1
+  }
+}

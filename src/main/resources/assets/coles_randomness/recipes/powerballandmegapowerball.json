@@ -1,0 +1,42 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:powerball"
+    },
+    "1": {
+      "item": "coles_randomness:powerball"
+    },
+    "2": {
+      "item": "coles_randomness:powerball"
+    },
+    "3": {
+      "item": "coles_randomness:powerball"
+    },
+    "4": {
+      "item": "coles_randomness:powerball"
+    },
+    "5": {
+      "item": "coles_randomness:powerball"
+    },
+    "6": {
+      "item": "coles_randomness:powerball"
+    },
+    "7": {
+      "item": "coles_randomness:powerball"
+    },
+    "8": {
+      "item": "coles_randomness:powerball"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:megapowerball",
+    "count": 1
+  }
+}

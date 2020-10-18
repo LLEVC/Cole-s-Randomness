@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coles_randomness:blocks/corn poop",
+    "up": "coles_randomness:blocks/corn poop",
+    "north": "coles_randomness:blocks/corn poop",
+    "east": "coles_randomness:blocks/corn poop",
+    "south": "coles_randomness:blocks/corn poop",
+    "west": "coles_randomness:blocks/corn poop",
+    "particle": "coles_randomness:blocks/corn poop"
+  }
+}

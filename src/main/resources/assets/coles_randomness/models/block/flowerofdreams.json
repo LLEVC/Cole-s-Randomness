@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "coles_randomness:blocks/flowerofdreams",
+    "particle": "coles_randomness:blocks/flowerofdreams"
+  }
+}

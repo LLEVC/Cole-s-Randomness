@@ -1,0 +1,47 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "2": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "3": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "4": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "5": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "6": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "7": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "8": {
+      "item": "minecraft:planks",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "coles_randomness:woodenarmorbody",
+    "count": 1
+  }
+}

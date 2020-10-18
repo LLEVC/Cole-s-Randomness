@@ -1,0 +1,36 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:copperingot"
+    },
+    "1": {
+      "item": "coles_randomness:copperingot"
+    },
+    "2": {
+      "item": "coles_randomness:copperingot"
+    },
+    "3": {
+      "item": "coles_randomness:copperingot"
+    },
+    "5": {
+      "item": "coles_randomness:copperingot"
+    },
+    "6": {
+      "item": "coles_randomness:copperingot"
+    },
+    "8": {
+      "item": "coles_randomness:copperingot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:copperarmorlegs",
+    "count": 1
+  }
+}

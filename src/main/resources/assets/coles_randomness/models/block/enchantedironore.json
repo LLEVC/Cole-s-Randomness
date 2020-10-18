@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coles_randomness:blocks/enchantedironore",
+    "up": "coles_randomness:blocks/enchantedironore",
+    "north": "coles_randomness:blocks/enchantedironore",
+    "east": "coles_randomness:blocks/enchantedironore",
+    "south": "coles_randomness:blocks/enchantedironore",
+    "west": "coles_randomness:blocks/enchantedironore",
+    "particle": "coles_randomness:blocks/enchantedironore"
+  }
+}

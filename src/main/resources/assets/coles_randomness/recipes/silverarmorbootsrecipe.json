@@ -1,0 +1,26 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:silveringot"
+    },
+    "2": {
+      "item": "coles_randomness:silveringot"
+    },
+    "3": {
+      "item": "coles_randomness:silveringot"
+    },
+    "5": {
+      "item": "coles_randomness:silveringot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:silverarmorboots",
+    "count": 1
+  }
+}

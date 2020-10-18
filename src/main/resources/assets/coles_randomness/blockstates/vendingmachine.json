@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "coles_randomness:vendingmachine"
+    },
+    "facing=north": {
+      "model": "coles_randomness:vendingmachine"
+    },
+    "facing=east": {
+      "model": "coles_randomness:vendingmachine",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coles_randomness:vendingmachine",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coles_randomness:vendingmachine",
+      "y": 270
+    }
+  }
+}

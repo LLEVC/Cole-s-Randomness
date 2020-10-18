@@ -1,0 +1,42 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:rubygem"
+    },
+    "1": {
+      "item": "coles_randomness:rubygem"
+    },
+    "2": {
+      "item": "coles_randomness:rubygem"
+    },
+    "3": {
+      "item": "coles_randomness:rubygem"
+    },
+    "4": {
+      "item": "coles_randomness:rubygem"
+    },
+    "5": {
+      "item": "coles_randomness:rubygem"
+    },
+    "6": {
+      "item": "coles_randomness:rubygem"
+    },
+    "7": {
+      "item": "coles_randomness:rubygem"
+    },
+    "8": {
+      "item": "coles_randomness:rubygem"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:rubyoreblock",
+    "count": 1
+  }
+}

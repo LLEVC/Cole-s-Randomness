@@ -1,0 +1,29 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "1": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "2": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "3": {
+      "item": "coles_randomness:fools_goldingot"
+    },
+    "5": {
+      "item": "coles_randomness:fools_goldingot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:fools_goldarmorhelmet",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:riteoreblock"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:ritegem",
+    "count": 9
+  }
+}

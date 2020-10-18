@@ -1,0 +1,33 @@
+{
+  "_fv": 10,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 352,
+    "height": 332,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "1 LV = 1 ",
+          "width": 120,
+          "height": 40,
+          "name": "1 LV = 1 ",
+          "x": 261,
+          "y": 86
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "clock.png",
+          "name": "clock.png",
+          "x": 360,
+          "y": 100
+        }
+      }
+    ]
+  }
+}

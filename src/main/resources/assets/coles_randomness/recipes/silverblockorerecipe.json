@@ -1,0 +1,13 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:silveroreblock"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:silveringot",
+    "count": 9
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:orechisle"
+    },
+    {
+      "item": "coles_randomness:riteore"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:ritegem",
+    "count": 3
+  }
+}

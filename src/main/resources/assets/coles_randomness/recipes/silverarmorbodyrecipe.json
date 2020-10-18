@@ -1,0 +1,39 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:silveringot"
+    },
+    "2": {
+      "item": "coles_randomness:silveringot"
+    },
+    "3": {
+      "item": "coles_randomness:silveringot"
+    },
+    "4": {
+      "item": "coles_randomness:silveringot"
+    },
+    "5": {
+      "item": "coles_randomness:silveringot"
+    },
+    "6": {
+      "item": "coles_randomness:silveringot"
+    },
+    "7": {
+      "item": "coles_randomness:silveringot"
+    },
+    "8": {
+      "item": "coles_randomness:silveringot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:silverarmorbody",
+    "count": 1
+  }
+}

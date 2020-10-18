@@ -1,0 +1,30 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "2": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "3": {
+      "item": "minecraft:planks",
+      "data": 0
+    },
+    "5": {
+      "item": "minecraft:planks",
+      "data": 0
+    }
+  },
+  "result": {
+    "item": "coles_randomness:woodenarmorboots",
+    "count": 1
+  }
+}

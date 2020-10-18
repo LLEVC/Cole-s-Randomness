@@ -1,0 +1,19 @@
+{
+  "_fv": 10,
+  "_type": "musicdisc",
+  "definition": {
+    "texture": "record_from_beta",
+    "name": "Music Disc",
+    "description": "Notch - Calm4",
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "music": {
+      "value": "CUSTOM:calm4_beta"
+    },
+    "specialInfo": [
+      "Alpha Music!"
+    ],
+    "hasGlow": true
+  }
+}

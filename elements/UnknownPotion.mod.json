@@ -1,0 +1,22 @@
+{
+  "_fv": 10,
+  "_type": "potion",
+  "definition": {
+    "name": "Unknown Potion",
+    "effectName": "Unknown Potion",
+    "icon": "potioneffect.png",
+    "color": {
+      "value": -13369396,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "UnknownPotionOnPotionActiveTick"
+    }
+  }
+}

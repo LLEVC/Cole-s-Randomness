@@ -1,0 +1,45 @@
+{
+  "_fv": 10,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:RiteGem"
+      },
+      {
+        "value": "CUSTOM:RiteGem"
+      },
+      {
+        "value": "CUSTOM:RiteGem"
+      },
+      {
+        "value": "CUSTOM:RiteGem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:RiteGem"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:RiteArmor.helmet"
+    },
+    "name": "ritearmorhelmetrecipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    " 4 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:dart_tip"
+    },
+    "4": {
+      "item": "minecraft:stained_hardened_clay",
+      "data": 32767
+    },
+    "8": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:normal_dart",
+    "count": 1
+  }
+}

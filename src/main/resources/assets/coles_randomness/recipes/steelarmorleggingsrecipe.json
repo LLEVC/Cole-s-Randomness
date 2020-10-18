@@ -1,0 +1,36 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:steelingot"
+    },
+    "1": {
+      "item": "coles_randomness:steelingot"
+    },
+    "2": {
+      "item": "coles_randomness:steelingot"
+    },
+    "3": {
+      "item": "coles_randomness:steelingot"
+    },
+    "5": {
+      "item": "coles_randomness:steelingot"
+    },
+    "6": {
+      "item": "coles_randomness:steelingot"
+    },
+    "8": {
+      "item": "coles_randomness:steelingot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:steelarmorlegs",
+    "count": 1
+  }
+}

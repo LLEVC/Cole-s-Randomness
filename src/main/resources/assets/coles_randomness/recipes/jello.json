@@ -1,0 +1,25 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:stick"
+    },
+    "1": {
+      "item": "minecraft:concrete",
+      "data": 14
+    },
+    "2": {
+      "item": "minecraft:water_bucket"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:jelloblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "_fv": 10,
+  "_type": "tab",
+  "definition": {
+    "name": "OP Creative Items",
+    "icon": {
+      "value": "CUSTOM:OPicon"
+    },
+    "showSearch": true
+  }
+}
