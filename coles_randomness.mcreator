@@ -1,8 +1,8 @@
 {
   "id_map": {
+    "GUI": 3,
     "ENTITY": 44,
-    "DIMENSION": 2,
-    "GUI": 3
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -3139,6 +3139,23 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "energy_recipe"
+    },
+    {
+      "name": "UnknownPotionPotionExpires",
+      "type": "procedure",
+      "sortid": 342,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "unknown_potion_potion_expires",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],

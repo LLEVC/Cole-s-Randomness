@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "tophat",
+        "missing": "tophat"
+      },
+      "name": "default"
+    }
+  }
+}
