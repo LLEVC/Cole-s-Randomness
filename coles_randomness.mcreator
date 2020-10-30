@@ -3156,6 +3156,178 @@
           }
         ]
       }
+    },
+    {
+      "name": "RedstoneMast3rCloneModel",
+      "type": "tool",
+      "sortid": 343,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_mast_3r_clone_model"
+    },
+    {
+      "name": "ColeCloneModel",
+      "type": "tool",
+      "sortid": 344,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cole_clone_model"
+    },
+    {
+      "name": "BlitzTDMCloneModel",
+      "type": "tool",
+      "sortid": 345,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blitz_tdm_clone_model"
+    },
+    {
+      "name": "EmmCloneModel",
+      "type": "tool",
+      "sortid": 346,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emm_clone_model"
+    },
+    {
+      "name": "TheDiamondRobotOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 347,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_diamond_robot_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedstoneMasterOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 348,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_master_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ColeOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 349,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cole_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmmicourtCloneOnEntityTickUpdate",
+      "type": "procedure",
+      "sortid": 350,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emmicourt_clone_on_entity_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RedstoneMast3rCloneModelToolInHandTick",
+      "type": "procedure",
+      "sortid": 351,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "redstone_mast_3r_clone_model_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ColeCloneModelToolInHandTick",
+      "type": "procedure",
+      "sortid": 352,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cole_clone_model_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlitzTDMCloneModelToolInHandTick",
+      "type": "procedure",
+      "sortid": 353,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blitz_tdm_clone_model_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EmmCloneModelToolInHandTick",
+      "type": "procedure",
+      "sortid": 354,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "emm_clone_model_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3222,6 +3394,7 @@
       "entity.gunarmythingyidk.name": "Army Person",
       "item.tntluanch.name": "TNT Launcher",
       "item.copperhoe.name": "Copper Hoe",
+      "item.redstone_mast_3r_clone_model.name": "RedstoneMast3r Morph",
       "item.record.testmusic.desc": "Notch - Calm4",
       "tile.poopblock.name": "A CRAPPY BLOCK",
       "item.fireball.name": "Fireball Luancher",
@@ -3257,13 +3430,14 @@
       "effect.unknownpotion": "Unknown Potion",
       "item.tntfood.name": "TNT Food",
       "potion.effect.unknownpotion": "Unknown Potion",
+      "item.cole_clone_model.name": "Cole Morph",
       "tile.realjelloblock.name": "JELLO BLOCK (Placeable)",
       "item.fools_goldingot.name": "Fools_Gold",
       "item.copperarmorbody.name": "Copper Chestplate",
       "tile.godfire.name": "God Fire",
       "item.emeraldpickaxe.name": "Emerald Pickaxe",
       "item.moss.name": "Moss",
-      "entity.emmicourtclone.name": "Emmitt Clone",
+      "entity.emmicourtclone.name": "TWISTED Clone",
       "tile.threex.name": "POOP TNT",
       "tile.silverore.name": "Silver Ore",
       "splash_potion.effect.unknownpotion": "Splash Unknown Potion",
@@ -3301,6 +3475,7 @@
       "item.singlepopcorn.name": "Single Popcorn Kernel",
       "item.big_dart.name": "Giant Dart",
       "item.gemofdreams.name": "Gem of Dreams",
+      "item.emm_clone_model.name": "TWISTED Morph",
       "item.silverarmorhelmet.name": "Silver Helmet",
       "item.canofsoda.name": "Can of Soda",
       "item.tntsword.name": "TNT Sword",
@@ -3318,6 +3493,7 @@
       "item.enchantedironingot.name": "Iron Ingot",
       "tile.steelore.name": "Steel Ore",
       "entity.thediamondrobot.name": "The Diamond Robot (BlitzTDM clone)",
+      "item.blitz_tdm_clone_model.name": "BlitzTDM Morph",
       "tile.copperore.name": "Copper Ore",
       "tile.energyblock.name": "Lighting Block",
       "item.infsword.name": "Infinity Sword",

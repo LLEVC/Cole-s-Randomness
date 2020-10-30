@@ -32,8 +32,8 @@ import net.minecraft.entity.EnumCreatureAttribute;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderSnowball;
-import net.minecraft.client.renderer.entity.RenderBiped;
-import net.minecraft.client.model.ModelBiped;
+import net.minecraft.client.renderer.entity.RenderLiving;
+import net.minecraft.client.model.ModelCreeper;
 import net.minecraft.client.Minecraft;
 
 import net.mcreator.coles_randomness.item.ItemKolbesGun;
@@ -78,18 +78,11 @@ public class EntityGUNARMYTHINGYIDK extends ElementsColesRandomnessMod.ModElemen
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
-			RenderBiped customRender = new RenderBiped(renderManager, new ModelBiped(), 0.5f) {
+			return new RenderLiving(renderManager, new ModelCreeper(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
 					return new ResourceLocation("coles_randomness:textures/indonesian_army_tni.png");
 				}
 			};
-			customRender.addLayer(new net.minecraft.client.renderer.entity.layers.LayerBipedArmor(customRender) {
-				protected void initArmor() {
-					this.modelLeggings = new ModelBiped(0.5f);
-					this.modelArmor = new ModelBiped(1);
-				}
-			});
-			return customRender;
 		});
 		RenderingRegistry.registerEntityRenderingHandler(EntityArrowCustom.class, renderManager -> {
 			return new RenderSnowball<EntityArrowCustom>(renderManager, null, Minecraft.getMinecraft().getRenderItem()) {
@@ -102,7 +95,7 @@ public class EntityGUNARMYTHINGYIDK extends ElementsColesRandomnessMod.ModElemen
 	public static class EntityCustom extends EntityMob implements IRangedAttackMob {
 		public EntityCustom(World world) {
 			super(world);
-			setSize(0.6f, 1.95f);
+			setSize(0.6f, 1.7f);
 			experienceValue = 5;
 			this.isImmuneToFire = false;
 			setNoAI(!true);

@@ -29,10 +29,14 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.model.ModelBiped;
 
+import net.mcreator.coles_randomness.procedure.ProcedureEmmicourtCloneOnEntityTickUpdate;
 import net.mcreator.coles_randomness.item.ItemInfSword;
+import net.mcreator.coles_randomness.item.ItemEmmCloneModel;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
+import java.util.Map;
 import java.util.Iterator;
+import java.util.HashMap;
 import java.util.ArrayList;
 
 @ElementsColesRandomnessMod.ModElement.Tag
@@ -70,7 +74,7 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			RenderBiped customRender = new RenderBiped(renderManager, new ModelBiped(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("coles_randomness:textures/emmicourt.png");
+					return new ResourceLocation("coles_randomness:textures/clock.png");
 				}
 			};
 			customRender.addLayer(new net.minecraft.client.renderer.entity.layers.LayerBipedArmor(customRender) {
@@ -90,12 +94,13 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 			this.isImmuneToFire = false;
 			setNoAI(!true);
 			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(ItemInfSword.block, (int) (1)));
+			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(ItemEmmCloneModel.block, (int) (1)));
 		}
 
 		@Override
 		protected void initEntityAI() {
 			super.initEntityAI();
-			this.tasks.addTask(1, new EntityAIWander(this, 3));
+			this.tasks.addTask(1, new EntityAIWander(this, 1));
 			this.tasks.addTask(2, new EntityAILookIdle(this));
 			this.tasks.addTask(3, new EntityAISwimming(this));
 			this.tasks.addTask(4, new EntityAIOpenDoor(this, true));
@@ -141,6 +146,20 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onEntityUpdate() {
+			super.onEntityUpdate();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureEmmicourtCloneOnEntityTickUpdate.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override

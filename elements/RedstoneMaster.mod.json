@@ -4,8 +4,9 @@
   "definition": {
     "mobName": "RedstoneMast3r's clone",
     "mobLabel": "",
-    "mobModelName": "Zombie",
-    "mobModelTexture": "redstonemast3r.png",
+    "mobModelName": "Biped",
+    "mobModelTexture": "clock.png",
+    "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.95,
     "modelShadowSize": 0.5,
@@ -19,6 +20,9 @@
       "value": -16776961,
       "falpha": 0.0
     },
+    "creativeTab": {
+      "value": "MISC"
+    },
     "isBoss": false,
     "bossBarColor": "PINK",
     "bossBarType": "PROGRESS",
@@ -26,7 +30,7 @@
       "value": "CUSTOM:Wat"
     },
     "equipmentOffHand": {
-      "value": "Blocks.UNLIT_REDSTONE_TORCH"
+      "value": "CUSTOM:RedstoneMast3rCloneModel"
     },
     "equipmentHelmet": {
       "value": ""
@@ -50,6 +54,7 @@
     "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "disableCollisions": false,
@@ -76,6 +81,9 @@
     "deathSound": {
       "value": "game.neutral.die"
     },
+    "stepSound": {
+      "value": ""
+    },
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -86,9 +94,12 @@
     "whenMobDies": {
       "name": "RedstoneMasterMobDies"
     },
+    "onMobTickUpdate": {
+      "name": "RedstoneMasterOnEntityTickUpdate"
+    },
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"http://www.w3.org/1999/xhtml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><next><block type=\"look_around\"><next><block type=\"swim_in_water\"><next><block type=\"doors_open\"><next><block type=\"doors_close\"></block></next></block></next></block></next></block></next></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"40\" y=\"40\"><next><block type=\"wander\"><field name=\"speed\">1</field><field name=\"condition\">null,null</field><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"doors_open\"><field name=\"condition\">null,null</field><next><block type=\"doors_close\"><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],

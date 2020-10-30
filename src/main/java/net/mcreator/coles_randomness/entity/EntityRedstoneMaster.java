@@ -16,7 +16,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.init.Blocks;
 import net.minecraft.entity.projectile.EntityPotion;
 import net.minecraft.entity.monster.EntityMob;
 import net.minecraft.entity.ai.EntityAIWander;
@@ -30,7 +29,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.model.ModelBiped;
 
+import net.mcreator.coles_randomness.procedure.ProcedureRedstoneMasterOnEntityTickUpdate;
 import net.mcreator.coles_randomness.procedure.ProcedureRedstoneMasterMobDies;
+import net.mcreator.coles_randomness.item.ItemRedstoneMast3rCloneModel;
 import net.mcreator.coles_randomness.block.BlockWat;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
@@ -74,7 +75,7 @@ public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement 
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			RenderBiped customRender = new RenderBiped(renderManager, new ModelBiped(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("coles_randomness:textures/redstonemast3r.png");
+					return new ResourceLocation("coles_randomness:textures/clock.png");
 				}
 			};
 			customRender.addLayer(new net.minecraft.client.renderer.entity.layers.LayerBipedArmor(customRender) {
@@ -94,7 +95,7 @@ public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement 
 			this.isImmuneToFire = false;
 			setNoAI(!true);
 			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(BlockWat.block, (int) (1)));
-			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(Blocks.UNLIT_REDSTONE_TORCH, (int) (1)));
+			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(ItemRedstoneMast3rCloneModel.block, (int) (1)));
 		}
 
 		@Override
@@ -162,6 +163,20 @@ public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement 
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ProcedureRedstoneMasterMobDies.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityUpdate() {
+			super.onEntityUpdate();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureRedstoneMasterOnEntityTickUpdate.executeProcedure($_dependencies);
 			}
 		}
 

@@ -1,0 +1,29 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "ole_ace",
+    "customModelName": "playermodel_-_copy_(2):default",
+    "name": "BlitzTDM Morph",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "toolType": "Special",
+    "harvestLevel": 1,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onItemInUseTick": {
+      "name": "BlitzTDMCloneModelToolInHandTick"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "emds_1"
+      },
+      "name": "default"
+    }
+  }
+}

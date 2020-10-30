@@ -29,7 +29,9 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.model.ModelBiped;
 
+import net.mcreator.coles_randomness.procedure.ProcedureTheDiamondRobotOnEntityTickUpdate;
 import net.mcreator.coles_randomness.procedure.ProcedureTheDiamondRobotMobDies;
+import net.mcreator.coles_randomness.item.ItemBlitzTDMCloneModel;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -72,7 +74,7 @@ public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			RenderBiped customRender = new RenderBiped(renderManager, new ModelBiped(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("coles_randomness:textures/blitztdm.png");
+					return new ResourceLocation("coles_randomness:textures/clock.png");
 				}
 			};
 			customRender.addLayer(new net.minecraft.client.renderer.entity.layers.LayerBipedArmor(customRender) {
@@ -92,6 +94,7 @@ public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement
 			this.isImmuneToFire = false;
 			setNoAI(!true);
 			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(Items.DIAMOND_SWORD, (int) (1)));
+			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(ItemBlitzTDMCloneModel.block, (int) (1)));
 		}
 
 		@Override
@@ -157,6 +160,20 @@ public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
 				ProcedureTheDiamondRobotMobDies.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityUpdate() {
+			super.onEntityUpdate();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureTheDiamondRobotOnEntityTickUpdate.executeProcedure($_dependencies);
 			}
 		}
 

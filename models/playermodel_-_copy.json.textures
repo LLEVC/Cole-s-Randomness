@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "llevc_mc"
+      },
+      "name": "default"
+    }
+  }
+}

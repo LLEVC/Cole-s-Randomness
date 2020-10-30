@@ -30,9 +30,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.RenderBiped;
 import net.minecraft.client.model.ModelBiped;
 
+import net.mcreator.coles_randomness.procedure.ProcedureColeOnEntityTickUpdate;
 import net.mcreator.coles_randomness.procedure.ProcedureColeItIsStruckByLightning;
 import net.mcreator.coles_randomness.item.ItemPrototype;
 import net.mcreator.coles_randomness.item.ItemGemofDreams;
+import net.mcreator.coles_randomness.item.ItemColeCloneModel;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -74,7 +76,7 @@ public class EntityCole extends ElementsColesRandomnessMod.ModElement {
 		RenderingRegistry.registerEntityRenderingHandler(EntityCustom.class, renderManager -> {
 			RenderBiped customRender = new RenderBiped(renderManager, new ModelBiped(), 0.5f) {
 				protected ResourceLocation getEntityTexture(Entity entity) {
-					return new ResourceLocation("coles_randomness:textures/animatingskin.png");
+					return new ResourceLocation("coles_randomness:textures/clock.png");
 				}
 			};
 			customRender.addLayer(new net.minecraft.client.renderer.entity.layers.LayerBipedArmor(customRender) {
@@ -94,7 +96,7 @@ public class EntityCole extends ElementsColesRandomnessMod.ModElement {
 			this.isImmuneToFire = false;
 			setNoAI(!true);
 			this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, new ItemStack(ItemGemofDreams.block, (int) (1)));
-			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(ItemPrototype.block, (int) (1)));
+			this.setItemStackToSlot(EntityEquipmentSlot.OFFHAND, new ItemStack(ItemColeCloneModel.block, (int) (1)));
 		}
 
 		@Override
@@ -163,6 +165,20 @@ public class EntityCole extends ElementsColesRandomnessMod.ModElement {
 			if (source == DamageSource.LIGHTNING_BOLT)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public void onEntityUpdate() {
+			super.onEntityUpdate();
+			int x = (int) this.posX;
+			int y = (int) this.posY;
+			int z = (int) this.posZ;
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureColeOnEntityTickUpdate.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
