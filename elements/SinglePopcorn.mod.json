@@ -3,7 +3,7 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "single_popcorn",
+    "texture": "popcornbruh",
     "customModelName": "Normal",
     "name": "Single Popcorn Kernel",
     "creativeTab": {
@@ -23,6 +23,7 @@
       "Single Kernel"
     ],
     "hasGlow": false,
+    "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64
   }

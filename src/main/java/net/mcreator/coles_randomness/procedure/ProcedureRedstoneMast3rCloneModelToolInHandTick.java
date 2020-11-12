@@ -22,8 +22,6 @@ public class ProcedureRedstoneMast3rCloneModelToolInHandTick extends ElementsCol
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 5, (int) 255, (false), (false)));
-		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.STRENGTH, (int) 5, (int) 3, (false), (false)));
 	}
 }

@@ -71,7 +71,7 @@ public class BlockFlowerOfDreams extends ElementsColesRandomnessMod.ModElement {
 	public static class BlockCustomFlower extends BlockFlower {
 		public BlockCustomFlower() {
 			setSoundType(SoundType.GROUND);
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(CreativeTabs.DECORATIONS);
 			setHardness(0.01F);
 			setResistance(2F);
 			setLightLevel(0F);

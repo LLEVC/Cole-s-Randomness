@@ -50,6 +50,11 @@ public class ItemRedstoneMast3rCloneModel extends ElementsColesRandomnessMod.Mod
 					$_dependencies.put("entity", entity);
 					ProcedureRedstoneMast3rCloneModelToolInHandTick.executeProcedure($_dependencies);
 				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					ProcedureRedstoneMast3rCloneModelToolInHandTick.executeProcedure($_dependencies);
+				}
 			}
 		}.setUnlocalizedName("redstone_mast_3r_clone_model").setRegistryName("redstone_mast_3r_clone_model").setCreativeTab(CreativeTabs.MISC));
 	}

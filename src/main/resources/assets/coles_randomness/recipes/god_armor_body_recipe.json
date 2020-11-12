@@ -1,0 +1,39 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:god_gem"
+    },
+    "2": {
+      "item": "coles_randomness:god_gem"
+    },
+    "3": {
+      "item": "coles_randomness:god_gem"
+    },
+    "4": {
+      "item": "coles_randomness:god_gem"
+    },
+    "5": {
+      "item": "coles_randomness:god_gem"
+    },
+    "6": {
+      "item": "coles_randomness:god_gem"
+    },
+    "7": {
+      "item": "coles_randomness:god_gem"
+    },
+    "8": {
+      "item": "coles_randomness:god_gem"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:god_armorbody",
+    "count": 1
+  }
+}

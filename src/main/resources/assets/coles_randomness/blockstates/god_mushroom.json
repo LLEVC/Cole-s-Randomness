@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "type=dandelion": {
+      "model": "coles_randomness:god_mushroom"
+    }
+  }
+}

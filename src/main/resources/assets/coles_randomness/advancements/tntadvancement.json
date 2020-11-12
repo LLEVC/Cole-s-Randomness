@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/blocks/stone.png",
     "icon": {
       "item": "minecraft:tnt"
     },
@@ -27,5 +26,6 @@
   },
   "rewards": {
     "experience": 10
-  }
+  },
+  "parent": "minecraft:adventure/root"
 }

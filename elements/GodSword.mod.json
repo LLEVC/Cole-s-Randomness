@@ -1,0 +1,26 @@
+{
+  "_fv": 10,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "god_sword",
+    "customModelName": "Normal",
+    "name": "God Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 20,
+    "efficiency": 24.0,
+    "attackSpeed": 2.0,
+    "enchantability": 140,
+    "damageVsEntity": 38.0,
+    "usageCount": 12000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

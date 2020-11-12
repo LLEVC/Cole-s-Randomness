@@ -35,9 +35,7 @@ import net.mcreator.coles_randomness.item.ItemBlitzTDMCloneModel;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement {
@@ -56,16 +54,8 @@ public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("coles_randomness:richbiome")),};
 		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.CREATURE, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -112,7 +102,7 @@ public class EntityTheDiamondRobot extends ElementsColesRandomnessMod.ModElement
 
 		@Override
 		protected Item getDropItem() {
-			return null;
+			return new ItemStack(ItemBlitzTDMCloneModel.block, (int) (1)).getItem();
 		}
 
 		@Override

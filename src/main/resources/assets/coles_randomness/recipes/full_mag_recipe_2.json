@@ -1,0 +1,25 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:empty"
+    },
+    {
+      "item": "coles_randomness:energy"
+    },
+    {
+      "item": "coles_randomness:energy"
+    },
+    {
+      "item": "coles_randomness:energy"
+    },
+    {
+      "item": "coles_randomness:energy"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:full",
+    "count": 1
+  }
+}

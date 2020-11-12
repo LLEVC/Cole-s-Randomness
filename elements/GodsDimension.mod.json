@@ -3,10 +3,10 @@
   "_type": "dimension",
   "definition": {
     "portalFrame": {
-      "value": "CUSTOM:EnergyBlock"
+      "value": "CUSTOM:GodPortalFrame"
     },
     "portalParticles": {
-      "value": "END_ROD"
+      "value": "EXPLOSION_NORMAL"
     },
     "portalLuminance": 0.0,
     "portalSound": {

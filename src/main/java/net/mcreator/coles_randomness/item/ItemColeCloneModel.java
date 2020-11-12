@@ -50,6 +50,11 @@ public class ItemColeCloneModel extends ElementsColesRandomnessMod.ModElement {
 					$_dependencies.put("entity", entity);
 					ProcedureColeCloneModelToolInHandTick.executeProcedure($_dependencies);
 				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					ProcedureColeCloneModelToolInHandTick.executeProcedure($_dependencies);
+				}
 			}
 		}.setUnlocalizedName("cole_clone_model").setRegistryName("cole_clone_model").setCreativeTab(CreativeTabs.MISC));
 	}

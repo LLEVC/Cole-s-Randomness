@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coles_randomness:blocks/godportalframe",
+    "particle": "coles_randomness:blocks/godportalframe"
+  }
+}

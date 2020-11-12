@@ -18,7 +18,7 @@
     "rewardXP": 10,
     "achievementType": "goal",
     "parent": {
-      "value": "No parent: root"
+      "value": "adventure/root"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"item_consumed\" x=\"43\" y=\"3\"><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:TNTFood</field></block></value><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }

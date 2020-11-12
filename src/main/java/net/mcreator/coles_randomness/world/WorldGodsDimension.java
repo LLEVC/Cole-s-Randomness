@@ -64,7 +64,7 @@ import net.minecraft.block.BlockFalling;
 import net.minecraft.block.Block;
 
 import net.mcreator.coles_randomness.item.ItemGodsDimension;
-import net.mcreator.coles_randomness.block.BlockEnergyBlock;
+import net.mcreator.coles_randomness.block.BlockGodPortalFrame;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import javax.annotation.Nullable;
@@ -294,7 +294,7 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 							int k11 = k6 + (l7 - 1) * i3 - j7 * l6;
 							boolean flag = k8 < 0;
 							this.world.setBlockState(new BlockPos(k9, k10, k11),
-									flag ? BlockEnergyBlock.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
+									flag ? BlockGodPortalFrame.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
 						}
 					}
 				}
@@ -308,7 +308,7 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 						int k12 = k6 + (l8 - 1) * i3;
 						boolean flag1 = l8 == 0 || l8 == 3 || l9 == -1 || l9 == 3;
 						this.world.setBlockState(new BlockPos(l10, l11, k12),
-								flag1 ? BlockEnergyBlock.block.getDefaultState().getBlock().getDefaultState() : iblockstate, 2);
+								flag1 ? BlockGodPortalFrame.block.getDefaultState().getBlock().getDefaultState() : iblockstate, 2);
 					}
 				}
 				for (int i9 = 0; i9 < 4; ++i9) {
@@ -345,7 +345,7 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 							int k2 = k + k1 * 0 - j1 * 1;
 							boolean flag = l1 < 0;
 							this.world.setBlockState(new BlockPos(i2, j2, k2),
-									flag ? BlockEnergyBlock.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
+									flag ? BlockGodPortalFrame.block.getDefaultState().getBlock().getDefaultState() : Blocks.AIR.getDefaultState());
 						}
 					}
 				}
@@ -560,7 +560,7 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 					pz = pos.getZ() + 0.5 + 0.25 * j;
 					vz = random.nextFloat() * 2 * j;
 				}
-				world.spawnParticle(EnumParticleTypes.END_ROD, px, py, pz, vx, vy, vz);
+				world.spawnParticle(EnumParticleTypes.EXPLOSION_NORMAL, px, py, pz, vx, vy, vz);
 			}
 			if (random.nextInt(110) == 0)
 				world.playSound(pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
@@ -640,12 +640,12 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 				for (i = 0; i < 22; ++i) {
 					BlockPos blockpos = p_180120_1_.offset(p_180120_2_, i);
 					if (!this.isEmptyBlock(this.world.getBlockState(blockpos).getBlock())
-							|| this.world.getBlockState(blockpos.down()).getBlock() != BlockEnergyBlock.block.getDefaultState().getBlock()) {
+							|| this.world.getBlockState(blockpos.down()).getBlock() != BlockGodPortalFrame.block.getDefaultState().getBlock()) {
 						break;
 					}
 				}
 				Block block = this.world.getBlockState(p_180120_1_.offset(p_180120_2_, i)).getBlock();
-				return block == BlockEnergyBlock.block.getDefaultState().getBlock() ? i : 0;
+				return block == BlockGodPortalFrame.block.getDefaultState().getBlock() ? i : 0;
 			}
 
 			public int getHeight() {
@@ -669,19 +669,19 @@ public class WorldGodsDimension extends ElementsColesRandomnessMod.ModElement {
 						}
 						if (i == 0) {
 							block = this.world.getBlockState(blockpos.offset(this.leftDir)).getBlock();
-							if (block != BlockEnergyBlock.block.getDefaultState().getBlock()) {
+							if (block != BlockGodPortalFrame.block.getDefaultState().getBlock()) {
 								break label56;
 							}
 						} else if (i == this.width - 1) {
 							block = this.world.getBlockState(blockpos.offset(this.rightDir)).getBlock();
-							if (block != BlockEnergyBlock.block.getDefaultState().getBlock()) {
+							if (block != BlockGodPortalFrame.block.getDefaultState().getBlock()) {
 								break label56;
 							}
 						}
 					}
 				}
 				for (int j = 0; j < this.width; ++j) {
-					if (this.world.getBlockState(this.bottomLeft.offset(this.rightDir, j).up(this.height)).getBlock() != BlockEnergyBlock.block
+					if (this.world.getBlockState(this.bottomLeft.offset(this.rightDir, j).up(this.height)).getBlock() != BlockGodPortalFrame.block
 							.getDefaultState().getBlock()) {
 						this.height = 0;
 						break;

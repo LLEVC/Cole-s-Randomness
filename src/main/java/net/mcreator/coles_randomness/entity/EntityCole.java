@@ -32,15 +32,12 @@ import net.minecraft.client.model.ModelBiped;
 
 import net.mcreator.coles_randomness.procedure.ProcedureColeOnEntityTickUpdate;
 import net.mcreator.coles_randomness.procedure.ProcedureColeItIsStruckByLightning;
-import net.mcreator.coles_randomness.item.ItemPrototype;
 import net.mcreator.coles_randomness.item.ItemGemofDreams;
 import net.mcreator.coles_randomness.item.ItemColeCloneModel;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class EntityCole extends ElementsColesRandomnessMod.ModElement {
@@ -58,16 +55,10 @@ public class EntityCole extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.CREATURE, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("coles_randomness:richbiome")),
+				Biome.REGISTRY.getObject(new ResourceLocation("coles_randomness:xraybiome")),
+				Biome.REGISTRY.getObject(new ResourceLocation("plains")),};
+		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.AMBIENT, spawnBiomes);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -116,7 +107,7 @@ public class EntityCole extends ElementsColesRandomnessMod.ModElement {
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(ItemPrototype.block, (int) (1)).getItem();
+			return new ItemStack(ItemColeCloneModel.block, (int) (1)).getItem();
 		}
 
 		@Override

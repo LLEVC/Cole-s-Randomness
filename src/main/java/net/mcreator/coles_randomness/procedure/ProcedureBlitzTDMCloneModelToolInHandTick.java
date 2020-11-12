@@ -1,7 +1,6 @@
 package net.mcreator.coles_randomness.procedure;
 
 import net.minecraft.potion.PotionEffect;
-import net.minecraft.init.MobEffects;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 
@@ -22,8 +21,6 @@ public class ProcedureBlitzTDMCloneModelToolInHandTick extends ElementsColesRand
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 5, (int) 255, (false), (false)));
 		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(PotionUnknownPotion.potion, (int) 5, (int) 255, (false), (false)));
 	}

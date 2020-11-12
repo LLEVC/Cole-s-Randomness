@@ -36,9 +36,7 @@ import net.mcreator.coles_randomness.block.BlockWat;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
-import java.util.Iterator;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement {
@@ -57,16 +55,10 @@ public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement 
 
 	@Override
 	public void init(FMLInitializationEvent event) {
-		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.CREATURE, spawnBiomes);
-	}
-
-	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
-		Iterator<Biome> itr = in.iterator();
-		ArrayList<Biome> ls = new ArrayList<Biome>();
-		while (itr.hasNext())
-			ls.add(itr.next());
-		return ls.toArray(new Biome[ls.size()]);
+		Biome[] spawnBiomes = {Biome.REGISTRY.getObject(new ResourceLocation("coles_randomness:richbiome")),
+				Biome.REGISTRY.getObject(new ResourceLocation("coles_randomness:xraybiome")),
+				Biome.REGISTRY.getObject(new ResourceLocation("plains")), Biome.REGISTRY.getObject(new ResourceLocation("desert")),};
+		EntityRegistry.addSpawn(EntityCustom.class, 20, 3, 30, EnumCreatureType.AMBIENT, spawnBiomes);
 	}
 
 	@SideOnly(Side.CLIENT)
@@ -115,7 +107,7 @@ public class EntityRedstoneMaster extends ElementsColesRandomnessMod.ModElement 
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(BlockWat.block, (int) (1)).getItem();
+			return new ItemStack(ItemRedstoneMast3rCloneModel.block, (int) (1)).getItem();
 		}
 
 		@Override

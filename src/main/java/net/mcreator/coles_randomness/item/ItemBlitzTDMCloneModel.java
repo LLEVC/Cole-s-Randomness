@@ -50,6 +50,11 @@ public class ItemBlitzTDMCloneModel extends ElementsColesRandomnessMod.ModElemen
 					$_dependencies.put("entity", entity);
 					ProcedureBlitzTDMCloneModelToolInHandTick.executeProcedure($_dependencies);
 				}
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					ProcedureBlitzTDMCloneModelToolInHandTick.executeProcedure($_dependencies);
+				}
 			}
 		}.setUnlocalizedName("blitz_tdm_clone_model").setRegistryName("blitz_tdm_clone_model").setCreativeTab(CreativeTabs.MISC));
 	}

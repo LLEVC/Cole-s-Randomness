@@ -22,8 +22,6 @@ public class ProcedureColeCloneModelToolInHandTick extends ElementsColesRandomne
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		if (entity instanceof EntityLivingBase)
-			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.INVISIBILITY, (int) 5, (int) 255, (false), (false)));
-		if (entity instanceof EntityLivingBase)
 			((EntityLivingBase) entity).addPotionEffect(new PotionEffect(MobEffects.HASTE, (int) 5, (int) 5, (false), (false)));
 	}
 }

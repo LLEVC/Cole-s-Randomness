@@ -21,6 +21,7 @@ import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAISwimming;
 import net.minecraft.entity.ai.EntityAIOpenDoor;
 import net.minecraft.entity.ai.EntityAILookIdle;
+import net.minecraft.entity.ai.EntityAIHurtByTarget;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.EnumCreatureAttribute;
@@ -57,7 +58,7 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 	@Override
 	public void init(FMLInitializationEvent event) {
 		Biome[] spawnBiomes = allbiomes(Biome.REGISTRY);
-		EntityRegistry.addSpawn(EntityCustom.class, 1, 3, 30, EnumCreatureType.CREATURE, spawnBiomes);
+		EntityRegistry.addSpawn(EntityCustom.class, 1, 3, 30, EnumCreatureType.AMBIENT, spawnBiomes);
 	}
 
 	private Biome[] allbiomes(net.minecraft.util.registry.RegistryNamespaced<ResourceLocation, Biome> in) {
@@ -105,6 +106,7 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 			this.tasks.addTask(3, new EntityAISwimming(this));
 			this.tasks.addTask(4, new EntityAIOpenDoor(this, true));
 			this.tasks.addTask(5, new EntityAIOpenDoor(this, false));
+			this.targetTasks.addTask(6, new EntityAIHurtByTarget(this, true));
 		}
 
 		@Override
@@ -114,12 +116,13 @@ public class EntityEmmicourtClone extends ElementsColesRandomnessMod.ModElement 
 
 		@Override
 		protected Item getDropItem() {
-			return new ItemStack(ItemInfSword.block, (int) (1)).getItem();
+			return new ItemStack(ItemEmmCloneModel.block, (int) (1)).getItem();
 		}
 
 		@Override
 		public net.minecraft.util.SoundEvent getAmbientSound() {
-			return (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation("coles_randomness:Emm OK"));
+			return (net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
+					.getObject(new ResourceLocation("entity.player.attack.crit"));
 		}
 
 		@Override

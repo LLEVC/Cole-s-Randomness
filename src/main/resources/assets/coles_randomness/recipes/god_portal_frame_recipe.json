@@ -1,0 +1,31 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "coles_randomness:rite_dust"
+    },
+    "3": {
+      "item": "coles_randomness:rite_dust"
+    },
+    "4": {
+      "item": "minecraft:quartz_block",
+      "data": 32767
+    },
+    "5": {
+      "item": "coles_randomness:rite_dust"
+    },
+    "7": {
+      "item": "coles_randomness:rite_dust"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:god_portal_frame",
+    "count": 1
+  }
+}

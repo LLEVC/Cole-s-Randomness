@@ -70,7 +70,7 @@
     "immuneToPotions": true,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:BlitzTDMCloneModel"
     },
     "livingSound": {
       "value": ""
@@ -114,7 +114,11 @@
     "mobSpawningType": "creature",
     "minNumberOfMobsPerGroup": 3,
     "maxNumberOfMobsPerGroup": 30,
-    "restrictionBiomes": [],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:RichBiome"
+      }
+    ],
     "spawnInDungeons": false
   }
 }
