@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "needle",
+    "texture": "needle_blood_no_paper",
     "customModelName": "Normal",
-    "name": "Needle",
+    "name": "Needle with Blood",
     "creativeTab": {
       "value": "MISC"
     },
@@ -23,12 +23,6 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "NeedleRightClickedInAir"
-    },
-    "onEntityHitWith": {
-      "name": "NeedleRightClickedInAir"
-    }
+    "inventoryStackSize": 64
   }
 }

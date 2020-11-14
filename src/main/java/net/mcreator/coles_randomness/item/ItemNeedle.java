@@ -13,6 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -78,6 +79,21 @@ public class ItemNeedle extends ElementsColesRandomnessMod.ModElement {
 				ProcedureNeedleRightClickedInAir.executeProcedure($_dependencies);
 			}
 			return ar;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack itemstack, EntityLivingBase entity, EntityLivingBase entity2) {
+			super.hitEntity(itemstack, entity, entity2);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			World world = entity.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureNeedleRightClickedInAir.executeProcedure($_dependencies);
+			}
+			return true;
 		}
 	}
 }

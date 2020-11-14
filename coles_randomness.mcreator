@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "DIMENSION": 2,
-    "ENTITY": 44,
-    "GUI": 3
+    "GUI": 3,
+    "ENTITY": 46,
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -3933,6 +3933,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "needle"
+    },
+    {
+      "name": "NeedleBlood",
+      "type": "item",
+      "sortid": 424,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_blood"
+    },
+    {
+      "name": "Monkey",
+      "type": "mob",
+      "sortid": 425,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 45,
+        "1": 46
+      },
+      "registry_name": "monkey"
     }
   ],
   "variable_elements": [],
@@ -4065,6 +4086,7 @@
       "tile.vendingmachine.name": "Vending Machine",
       "item.poopcorn.name": "Poop-corn",
       "item.ritegem.name": "R-ite ",
+      "item.needle_blood.name": "Needle with Blood",
       "item.obsidianaxe.name": "Obsidian Axe",
       "item.dream_pickaxe.name": "Dream Pickaxe",
       "item.obsidianarmorboots.name": "Obsidian Boots",
@@ -4164,7 +4186,8 @@
       "item.silverarmorlegs.name": "Silver Leggings",
       "entity.redstonemaster.name": "RedstoneMast3r\u0027s clone",
       "item.ritehoe.name": "R-ite Hoe",
-      "item.emeraldarmorhelmet.name": "Emerald Helmet"
+      "item.emeraldarmorhelmet.name": "Emerald Helmet",
+      "entity.monkey.name": "Monkey"
     }
   },
   "workspaceSettings": {
