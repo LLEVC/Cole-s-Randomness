@@ -1,0 +1,8 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "coles_randomness:blocks/demon_planks",
+    "top": "coles_randomness:blocks/demon_planks",
+    "side": "coles_randomness:blocks/demon_planks"
+  }
+}

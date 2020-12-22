@@ -1,8 +1,8 @@
 {
   "id_map": {
+    "DIMENSION": 2,
     "GUI": 3,
-    "ENTITY": 46,
-    "DIMENSION": 2
+    "ENTITY": 47
   },
   "mod_elements": [
     {
@@ -27,7 +27,8 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "registry_name": "foodgen"
     },
     {
       "name": "CommandThingCommandExecuted",
@@ -2775,22 +2776,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -3566,7 +3551,7 @@
     {
       "name": "GodPickaxe",
       "type": "tool",
-      "sortid": 386,
+      "sortid": 497,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3575,7 +3560,7 @@
     {
       "name": "GodAxe",
       "type": "tool",
-      "sortid": 387,
+      "sortid": 498,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3584,7 +3569,7 @@
     {
       "name": "GodSword",
       "type": "tool",
-      "sortid": 388,
+      "sortid": 499,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3593,7 +3578,7 @@
     {
       "name": "GodShovel",
       "type": "tool",
-      "sortid": 389,
+      "sortid": 500,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3602,7 +3587,7 @@
     {
       "name": "GodHoe",
       "type": "tool",
-      "sortid": 390,
+      "sortid": 501,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3611,7 +3596,7 @@
     {
       "name": "GodPickaxeRecipe",
       "type": "recipe",
-      "sortid": 391,
+      "sortid": 502,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3620,7 +3605,7 @@
     {
       "name": "GodAxeRecipe",
       "type": "recipe",
-      "sortid": 392,
+      "sortid": 503,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3629,7 +3614,7 @@
     {
       "name": "GodSwordRecipe",
       "type": "recipe",
-      "sortid": 393,
+      "sortid": 504,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3638,7 +3623,7 @@
     {
       "name": "GodShovelRecipe",
       "type": "recipe",
-      "sortid": 394,
+      "sortid": 505,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3647,7 +3632,7 @@
     {
       "name": "GodHoeRecipe",
       "type": "recipe",
-      "sortid": 395,
+      "sortid": 506,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3954,33 +3939,587 @@
         "1": 46
       },
       "registry_name": "monkey"
+    },
+    {
+      "name": "NeedlePaper",
+      "type": "item",
+      "sortid": 426,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper"
+    },
+    {
+      "name": "NeedleLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 427,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NeedlePaperRightClickedInAir",
+      "type": "procedure",
+      "sortid": 428,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "NeedlePaperBlood",
+      "type": "item",
+      "sortid": 429,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_blood"
+    },
+    {
+      "name": "NeedlePaperLivingEntityIsHitWithItem",
+      "type": "procedure",
+      "sortid": 430,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_living_entity_is_hit_with_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PaperBlood",
+      "type": "item",
+      "sortid": 431,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "paper_blood"
+    },
+    {
+      "name": "NeedlePaperBloodRightClickedInAir",
+      "type": "procedure",
+      "sortid": 432,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_blood_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "RadiationIngot",
+      "type": "item",
+      "sortid": 433,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_ingot"
+    },
+    {
+      "name": "RadiationOre",
+      "type": "block",
+      "sortid": 434,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_ore"
+    },
+    {
+      "name": "RadiationOreBlock",
+      "type": "block",
+      "sortid": 435,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_ore_block"
+    },
+    {
+      "name": "RadiationOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 436,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_ore_block_recipe"
+    },
+    {
+      "name": "RadiationBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 437,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_block_ore_recipe"
+    },
+    {
+      "name": "RadiationOreSmelting",
+      "type": "recipe",
+      "sortid": 438,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiation_ore_smelting"
+    },
+    {
+      "name": "NeedleRecipe",
+      "type": "recipe",
+      "sortid": 439,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_recipe"
+    },
+    {
+      "name": "NeedlePaperRecipe",
+      "type": "recipe",
+      "sortid": 440,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_recipe"
+    },
+    {
+      "name": "NeedlePaperBloodRecipe",
+      "type": "recipe",
+      "sortid": 441,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "needle_paper_blood_recipe"
+    },
+    {
+      "name": "Ham",
+      "type": "food",
+      "sortid": 442,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ham"
+    },
+    {
+      "name": "HamerLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hamer_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HamerEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 444,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hamer_entity_swings_item",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Hamer",
+      "type": "tool",
+      "sortid": 443,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hamer"
+    },
+    {
+      "name": "HamerRecipe",
+      "type": "recipe",
+      "sortid": 445,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hamer_recipe"
+    },
+    {
+      "name": "HamRecipe",
+      "type": "recipe",
+      "sortid": 448,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ham_recipe"
+    },
+    {
+      "name": "PizzaSlice",
+      "type": "food",
+      "sortid": 449,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "pizza_slice"
+    },
+    {
+      "name": "Musket",
+      "type": "gun",
+      "sortid": 450,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 47
+      },
+      "registry_name": "musket"
+    },
+    {
+      "name": "BigAxeToolInHandTick",
+      "type": "procedure",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "big_axe_tool_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BigAxeBlockDestroyedWithTool",
+      "type": "procedure",
+      "sortid": 452,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "big_axe_block_destroyed_with_tool",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BigAxe",
+      "type": "tool",
+      "sortid": 451,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "big_axe"
+    },
+    {
+      "name": "GodWood",
+      "type": "block",
+      "sortid": 453,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_wood"
+    },
+    {
+      "name": "GodLog",
+      "type": "block",
+      "sortid": 454,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_log"
+    },
+    {
+      "name": "GodPlanks",
+      "type": "block",
+      "sortid": 455,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_planks"
+    },
+    {
+      "name": "GodLeaves",
+      "type": "block",
+      "sortid": 456,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_leaves"
+    },
+    {
+      "name": "GodStairs",
+      "type": "block",
+      "sortid": 457,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_stairs"
+    },
+    {
+      "name": "GodSlab",
+      "type": "block",
+      "sortid": 458,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_slab"
+    },
+    {
+      "name": "GodWoodRecipe",
+      "type": "recipe",
+      "sortid": 462,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_wood_recipe"
+    },
+    {
+      "name": "GodPlanksRecipe",
+      "type": "recipe",
+      "sortid": 463,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_planks_recipe"
+    },
+    {
+      "name": "GodStairsRecipe",
+      "type": "recipe",
+      "sortid": 464,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_stairs_recipe"
+    },
+    {
+      "name": "GodSlabRecipe",
+      "type": "recipe",
+      "sortid": 465,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_slab_recipe"
+    },
+    {
+      "name": "GodStickRecipe",
+      "type": "recipe",
+      "sortid": 468,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_stick_recipe"
+    },
+    {
+      "name": "DemonWood",
+      "type": "block",
+      "sortid": 469,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_wood"
+    },
+    {
+      "name": "DemonLog",
+      "type": "block",
+      "sortid": 470,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_log"
+    },
+    {
+      "name": "DemonPlanks",
+      "type": "block",
+      "sortid": 471,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_planks"
+    },
+    {
+      "name": "DemonLeaves",
+      "type": "block",
+      "sortid": 472,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_leaves"
+    },
+    {
+      "name": "DemonStairs",
+      "type": "block",
+      "sortid": 473,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_stairs"
+    },
+    {
+      "name": "DemonSlab",
+      "type": "block",
+      "sortid": 474,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_slab"
+    },
+    {
+      "name": "DemonWoodRecipe",
+      "type": "recipe",
+      "sortid": 478,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_wood_recipe"
+    },
+    {
+      "name": "DemonPlanksRecipe",
+      "type": "recipe",
+      "sortid": 479,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_planks_recipe"
+    },
+    {
+      "name": "DemonStairsRecipe",
+      "type": "recipe",
+      "sortid": 480,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_stairs_recipe"
+    },
+    {
+      "name": "DemonSlabRecipe",
+      "type": "recipe",
+      "sortid": 481,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_slab_recipe"
+    },
+    {
+      "name": "DemonStickRecipe",
+      "type": "recipe",
+      "sortid": 484,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_stick_recipe"
+    },
+    {
+      "name": "GodBiome",
+      "type": "biome",
+      "sortid": 485,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "god_biome"
+    },
+    {
+      "name": "DemonBiome",
+      "type": "biome",
+      "sortid": 486,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "demon_biome"
     }
   ],
   "variable_elements": [],
   "sound_elements": [
     {
       "name": "Cole ok",
-      "file": "untitled",
+      "files": [
+        "untitled"
+      ],
       "category": "hostile"
     },
     {
       "name": "dead",
-      "file": "die",
+      "files": [
+        "die"
+      ],
       "category": "hostile"
     },
     {
       "name": "hurt",
-      "file": "hurt",
+      "files": [
+        "hurt"
+      ],
       "category": "hostile"
     },
     {
       "name": "Emm OK",
-      "file": "emm ok",
+      "files": [
+        "emm ok"
+      ],
       "category": "hostile"
     },
     {
       "name": "calm4_beta",
-      "file": "alm4",
+      "files": [
+        "alm4"
+      ],
       "category": "record"
     }
   ],
@@ -3990,13 +4529,15 @@
       "item.ritepickaxe.name": "R-ite Pickaxe",
       "advancements.dirtyhands.descr": "Craft Poop",
       "item.demon_gem.name": "Demon",
+      "tile.radiation_ore_block.name": "Block of Radiation",
       "tile.riteoreblock.name": "Block of R-ite",
       "item.cowspawn.name": "§aMoo§r Item",
       "item.steelhoe.name": "Steel Hoe",
       "item.god_gem.name": "God",
+      "tile.demon_log.name": "Demon Log",
       "item.jelloblock.name": "Edable jello block",
-      "item.rodofenergy.name": "Lighting Rod",
       "item.coppersword.name": "Copper Sword",
+      "item.rodofenergy.name": "Lighting Rod",
       "item.steelarmorboots.name": "Steel Boots",
       "tile.demon_ore.name": "Demon Ore",
       "item.crowbar.name": "Crowbar",
@@ -4022,12 +4563,16 @@
       "item.steelsword.name": "Steel Sword",
       "tile.dream_ore.name": "Dream Ore",
       "item.rifleammo.name": "Rifle Ammo",
+      "tile.god_wood.name": "God Wood",
       "item.powerball.name": "Powerball ",
+      "item.paper_blood.name": "Paper Blood",
       "item.tntfood.name": "TNT Food",
       "item.demon_armorbody.name": "Demon Chestplate",
+      "tile.radiation_ore.name": "Radiation Ore",
       "tile.dream_ore_block.name": "Block of Dream",
       "item.fools_goldingot.name": "Fools_Gold",
       "item.emeraldpickaxe.name": "Emerald Pickaxe",
+      "item.hamer.name": "Hamer",
       "tile.threex.name": "POOP TNT",
       "tile.silverore.name": "Silver Ore",
       "item.emeraldshovel.name": "Emerald Shovel",
@@ -4043,9 +4588,12 @@
       "tipped_arrow.effect.unknownpotion": "Arrow of Unknown Potion",
       "item.emeraldsword.name": "Emerald Sword",
       "item.diamond_dimension.name": "Flint and R-ITE",
+      "tile.god_leaves.name": "God Leaves",
+      "item.pizza_slice.name": "Pizza Slice",
       "item.emeraldaxe.name": "Emerald Axe",
       "tile.steeloreblock.name": "Block of Steel",
       "item.normalgon.name": "Normal Gun",
+      "item.big_axe.name": "Extremely Big Axe!",
       "item.megapowerball.name": "MEGA POWER BALL",
       "item.big_dart.name": "Giant Dart",
       "item.gemofdreams.name": "Gem of Dreams",
@@ -4056,6 +4604,7 @@
       "item.tntsword.name": "TNT Sword",
       "item.silverpickaxe.name": "Silver Pickaxe",
       "item.turnip_bits.name": "Turnip Bits",
+      "tile.demon_leaves.name": "Demon Leaves",
       "item.god_armorbody.name": "God Chestplate",
       "item.demon_armorboots.name": "Demon Boots",
       "item.unbreakablesword.name": "Unbreakable Sword",
@@ -4064,6 +4613,7 @@
       "item.obsidianarmorbody.name": "Obsidian Chestplate",
       "entity.thediamondrobot.name": "The Diamond Robot (BlitzTDM clone)",
       "tile.copperore.name": "Copper Ore",
+      "item.musket.name": "Musket",
       "item.infsword.name": "Infinity Sword",
       "item.silvershovel.name": "Silver Shovel",
       "item.demon_pickaxe.name": "Demon Pickaxe",
@@ -4074,7 +4624,6 @@
       "item.dart_tip.name": "Dart Tip",
       "item.popcornempty.name": "Popcorn Empty",
       "item.battleaxe.name": "Battle Axe",
-      "tile.wat.name": "Food Gen (put in ground)",
       "item.fools_goldaxe.name": "Fools_Gold Axe",
       "item.fools_goldhoe.name": "Fools_Gold Hoe",
       "item.god_armorlegs.name": "God Leggings",
@@ -4099,6 +4648,7 @@
       "item.dream_axe.name": "Dream Axe",
       "item.normal_dart.name": "Normal Dart",
       "item.obsidianpickaxe.name": "Obsidian Pickaxe",
+      "item.needle_paper.name": "Needle Paper",
       "lingering_potion.effect.unknownpotion": "Lingering Unknown Potion",
       "tile.fools_goldore.name": "Fools_Gold Ore",
       "item.fools_goldarmorbody.name": "Fools_Gold Chestplate",
@@ -4119,9 +4669,12 @@
       "item.copperarmorhelmet.name": "Copper Helmet",
       "item.obsidianhoe.name": "Obsidian Hoe",
       "item.demon_hoe.name": "Demon Hoe",
+      "item.radiation_ingot.name": "Rad Ingot",
+      "tile.demon_slab.name": "Demon Slab",
       "item.empty.name": "Prototype Mag",
       "advancements.tntadvancement.descr": "Eat TNT Food!",
       "entity.emraldsteve.name": "Emerald Steve",
+      "item.ham.name": "Ham",
       "item.obsidianarmorhelmet.name": "Obsidian Helmet",
       "item.god_armorboots.name": "God Boots",
       "item.woodenarmorbody.name": "Wooden Chestplate",
@@ -4135,6 +4688,8 @@
       "tile.godfire.name": "God Fire",
       "item.moss.name": "Moss",
       "entity.emmicourtclone.name": "TWISTED Clone",
+      "tile.god_stairs.name": "God Stairs",
+      "tile.god_slab.name": "God Slab",
       "splash_potion.effect.unknownpotion": "Splash Unknown Potion",
       "entity.cole.name": "Cole\u0027s Clone",
       "item.emeraldarmorboots.name": "Emerald Boots",
@@ -4146,6 +4701,7 @@
       "item.steelarmorbody.name": "Steel Chestplate",
       "item.teleportbow.name": "Teleport Bow",
       "item.god_axe.name": "God Axe",
+      "tile.demon_stairs.name": "Demon Stairs",
       "item.wither_soul.name": "Wither\u0027s Soul",
       "item.silverhoe.name": "Silver Hoe",
       "tile.rubyoreblock.name": "Block of Ruby",
@@ -4157,21 +4713,25 @@
       "item.dusteddiamonddust.name": "DustedDiamond",
       "item.singlepopcorn.name": "Single Popcorn Kernel",
       "item.silverarmorhelmet.name": "Silver Helmet",
+      "tile.demon_wood.name": "Demon Wood",
       "item.popcorn.name": "Popcorn",
       "item.prototype.name": "Prototype",
       "item.silveraxe.name": "Silver Axe",
       "tile.enchantedironore.name": "Enchanted Iron Ore",
+      "item.needle_paper_blood.name": "Needle Paper Blood",
       "item.enchantedironingot.name": "Iron Ingot",
       "tile.steelore.name": "Steel Ore",
       "item.blitz_tdm_clone_model.name": "BlitzTDM Morph",
       "item.god_shovel.name": "God Shovel",
       "tile.energyblock.name": "Lighting Block",
+      "tile.foodgen.name": "Food Gen (put in ground)",
       "item.dream_shovel.name": "Dream Shovel",
       "item.god_armorhelmet.name": "God Helmet",
       "item.emeraldarmorlegs.name": "Emerald Leggings",
       "item.dream_gem.name": "Gem of Dreams",
       "item.godsdimension.name": "Tool of the Gods",
       "advancements.tntadvancement.title": "TNT Feaver",
+      "tile.demon_planks.name": "Demon Planks",
       "tile.xrayblock.name": "Xray",
       "item.steelpickaxe.name": "Steel Pickaxe",
       "item.silveringot.name": "Silver",
@@ -4181,8 +4741,10 @@
       "tile.flowerofdreams.name": "Flower of Dreams",
       "item.demon_shovel.name": "Demon Shovel",
       "item.fools_goldarmorlegs.name": "Fools_Gold Leggings",
+      "tile.god_log.name": "God Log",
       "item.opicon.name": "OP icon",
       "item.god_hoe.name": "God Hoe",
+      "tile.god_planks.name": "God Planks",
       "item.silverarmorlegs.name": "Silver Leggings",
       "entity.redstonemaster.name": "RedstoneMast3r\u0027s clone",
       "item.ritehoe.name": "R-ite Hoe",
@@ -4193,8 +4755,9 @@
   "workspaceSettings": {
     "modid": "coles_randomness",
     "modName": "Cole\u0027s RANDOMNESS",
-    "version": "1.5.0preV3",
+    "version": "1.5.0preV4",
     "author": "LLEVCole",
+    "websiteURL": "https://mcreator.net",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
     "requiredMods": [],
@@ -4202,9 +4765,9 @@
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.12.2",
-    "credits": "Credits to Users BlitzTDM,EMDS,RedstoneMast3r, and Kolbeeeeee on discord and PYLO for making MCreator",
+    "credits": "Credits to Users BlitzTDM,EMDS,RedstoneMast3r, and Kolbe on discord and PYLO for making MCreator",
     "modElementsPackage": "net.mcreator.coles_randomness",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202000432115
+  "mcreatorVersion": 202000547520
 }

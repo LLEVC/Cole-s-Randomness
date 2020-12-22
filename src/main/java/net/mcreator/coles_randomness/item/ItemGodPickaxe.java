@@ -24,18 +24,18 @@ public class ItemGodPickaxe extends ElementsColesRandomnessMod.ModElement {
 	@GameRegistry.ObjectHolder("coles_randomness:god_pickaxe")
 	public static final Item block = null;
 	public ItemGodPickaxe(ElementsColesRandomnessMod instance) {
-		super(instance, 386);
+		super(instance, 497);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("GOD_PICKAXE", 20, 6280, 24f, 16f, 140)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("GOD_PICKAXE", 10, 2380, 16f, 6f, 70)) {
 			{
 				this.attackSpeed = -3f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("pickaxe", 20);
+				ret.put("pickaxe", 10);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("god_pickaxe").setRegistryName("god_pickaxe").setCreativeTab(CreativeTabs.TOOLS));

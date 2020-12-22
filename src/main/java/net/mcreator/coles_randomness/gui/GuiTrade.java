@@ -240,14 +240,14 @@ public class GuiTrade extends ElementsColesRandomnessMod.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			this.mc.renderEngine.bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
+			this.drawModalRectWithCustomSizedTexture(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			zLevel = 100.0F;
 			this.mc.renderEngine.bindTexture(new ResourceLocation("coles_randomness:textures/clock.png"));
-			this.drawTexturedModalRect(this.guiLeft + 55, this.guiTop + 13, 0, 0, 256, 256);
+			this.drawModalRectWithCustomSizedTexture(this.guiLeft + 54, this.guiTop + 13, 0, 0, 256, 256, 256, 256);
 		}
 
 		@Override

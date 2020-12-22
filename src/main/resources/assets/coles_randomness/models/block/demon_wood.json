@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "coles_randomness:blocks/demon_log_side",
+    "particle": "coles_randomness:blocks/demon_log_side"
+  }
+}

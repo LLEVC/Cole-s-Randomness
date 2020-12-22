@@ -127,10 +127,6 @@ public class EntityCowX10 extends ElementsColesRandomnessMod.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
 				ProcedureCowX10ItIsStruckByLightning.executeProcedure($_dependencies);
 			}
 		}

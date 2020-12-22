@@ -1,0 +1,14 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type": "forge:ore_dict",
+      "ore": "forgegod_log"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:god_planks",
+    "count": 4
+  }
+}

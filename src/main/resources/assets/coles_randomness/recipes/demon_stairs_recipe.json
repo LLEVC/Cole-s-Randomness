@@ -1,0 +1,33 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0  ",
+    "34 ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:demon_planks"
+    },
+    "3": {
+      "item": "coles_randomness:demon_planks"
+    },
+    "4": {
+      "item": "coles_randomness:demon_planks"
+    },
+    "6": {
+      "item": "coles_randomness:demon_planks"
+    },
+    "7": {
+      "item": "coles_randomness:demon_planks"
+    },
+    "8": {
+      "item": "coles_randomness:demon_planks"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:demon_stairs",
+    "count": 4
+  }
+}

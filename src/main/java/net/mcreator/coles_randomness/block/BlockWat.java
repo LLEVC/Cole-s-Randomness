@@ -30,7 +30,7 @@ import java.util.HashMap;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class BlockWat extends ElementsColesRandomnessMod.ModElement {
-	@GameRegistry.ObjectHolder("coles_randomness:wat")
+	@GameRegistry.ObjectHolder("coles_randomness:foodgen")
 	public static final Block block = null;
 	public BlockWat(ElementsColesRandomnessMod instance) {
 		super(instance, 2);
@@ -38,19 +38,20 @@ public class BlockWat extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.blocks.add(() -> new BlockCustom().setRegistryName("wat"));
+		elements.blocks.add(() -> new BlockCustom().setRegistryName("foodgen"));
 		elements.items.add(() -> new ItemBlock(block).setRegistryName(block.getRegistryName()));
 	}
 
 	@SideOnly(Side.CLIENT)
 	@Override
 	public void registerModels(ModelRegistryEvent event) {
-		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0, new ModelResourceLocation("coles_randomness:wat", "inventory"));
+		ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(block), 0,
+				new ModelResourceLocation("coles_randomness:foodgen", "inventory"));
 	}
 	public static class BlockCustom extends BlockFalling {
 		public BlockCustom() {
 			super(Material.IRON);
-			setUnlocalizedName("wat");
+			setUnlocalizedName("foodgen");
 			setSoundType(SoundType.METAL);
 			setHarvestLevel("pickaxe", 10);
 			setHardness(10F);

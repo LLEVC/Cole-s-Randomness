@@ -1,0 +1,19 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:needle_blood"
+    },
+    "1": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:needle_paper_blood",
+    "count": 1
+  }
+}

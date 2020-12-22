@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=bottom,variant=default": {
+      "model": "coles_randomness:god_slab"
+    },
+    "half=top,variant=default": {
+      "model": "coles_randomness:god_slab_top"
+    }
+  }
+}

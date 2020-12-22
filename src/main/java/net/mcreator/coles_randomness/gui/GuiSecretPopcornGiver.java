@@ -243,11 +243,11 @@ public class GuiSecretPopcornGiver extends ElementsColesRandomnessMod.ModElement
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			this.mc.renderEngine.bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
+			this.drawModalRectWithCustomSizedTexture(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			zLevel = 100.0F;
 		}
 
@@ -268,7 +268,7 @@ public class GuiSecretPopcornGiver extends ElementsColesRandomnessMod.ModElement
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Popcorn Giver 5000", 10, 9, -16777216);
+			this.fontRenderer.drawString("Popcorn Giver 5000", 9, 9, -16777216);
 		}
 
 		@Override
@@ -284,8 +284,8 @@ public class GuiSecretPopcornGiver extends ElementsColesRandomnessMod.ModElement
 			this.guiTop = (this.height - 200) / 2;
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
-			this.buttonList.add(new GuiButton(0, this.guiLeft + 80, this.guiTop + 22, 140, 20, "Give 1 Popcorn"));
-			this.buttonList.add(new GuiButton(1, this.guiLeft + 92, this.guiTop + 44, 110, 20, "Give 1 Dirt"));
+			this.buttonList.add(new GuiButton(0, this.guiLeft + 79, this.guiTop + 22, 140, 20, "Give 1 Popcorn"));
+			this.buttonList.add(new GuiButton(1, this.guiLeft + 91, this.guiTop + 44, 110, 20, "Give 1 Dirt"));
 			this.buttonList.add(new GuiButton(2, this.guiLeft + 78, this.guiTop + 68, 150, 20, "Give 1 Bonemeal"));
 		}
 

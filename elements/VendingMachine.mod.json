@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "block",
   "definition": {
     "texture": "8486b610-825e-4b60-856e-dbcb34d9bfc4",
@@ -12,6 +12,7 @@
     "customModelName": "f56b3dbb-5e24-4590-ad4d-86d1d53dd007:default",
     "rotationMode": 3,
     "emissiveRendering": false,
+    "displayFluidOverlay": false,
     "itemTexture": "",
     "hasTransparency": true,
     "connectedSides": false,
@@ -27,6 +28,7 @@
     "hardness": 5.0,
     "resistance": 10.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "REDSTONE"
     },
@@ -35,6 +37,7 @@
       "value": ""
     },
     "dropAmount": 1,
+    "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

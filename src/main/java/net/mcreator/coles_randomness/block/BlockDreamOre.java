@@ -61,15 +61,17 @@ public class BlockDreamOre extends ElementsColesRandomnessMod.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 6; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(13) + 0;
+			int y = random.nextInt(16) + 0;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 1, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 4, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
 					if (blockAt.getBlock() == Blocks.STONE.getDefaultState().getBlock())
+						blockCriteria = true;
+					if (blockAt.getBlock() == Blocks.BEDROCK.getDefaultState().getBlock())
 						blockCriteria = true;
 					return blockCriteria;
 				}

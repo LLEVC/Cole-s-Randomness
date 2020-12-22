@@ -3,14 +3,12 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "coles_randomness:orechisle"
-    },
-    {
-      "item": "minecraft:diamond"
+      "type": "forge:ore_dict",
+      "ore": "forgedemon_log"
     }
   ],
   "result": {
-    "item": "coles_randomness:dusteddiamonddust",
+    "item": "coles_randomness:demon_planks",
     "count": 4
   }
 }

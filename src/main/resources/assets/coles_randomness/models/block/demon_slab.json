@@ -1,0 +1,8 @@
+{
+  "parent": "block/half_slab",
+  "textures": {
+    "bottom": "coles_randomness:blocks/demon_planks",
+    "top": "coles_randomness:blocks/demon_planks",
+    "side": "coles_randomness:blocks/demon_planks"
+  }
+}

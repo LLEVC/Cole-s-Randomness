@@ -19,6 +19,7 @@ import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.coles_randomness.procedure.ProcedureNeedleRightClickedInAir;
+import net.mcreator.coles_randomness.procedure.ProcedureNeedleLivingEntityIsHitWithItem;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -91,7 +92,7 @@ public class ItemNeedle extends ElementsColesRandomnessMod.ModElement {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
 				$_dependencies.put("entity", entity);
-				ProcedureNeedleRightClickedInAir.executeProcedure($_dependencies);
+				ProcedureNeedleLivingEntityIsHitWithItem.executeProcedure($_dependencies);
 			}
 			return true;
 		}

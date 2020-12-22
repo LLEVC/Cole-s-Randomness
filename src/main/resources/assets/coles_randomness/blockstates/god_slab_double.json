@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "variant=default": {
+      "model": "coles_randomness:god_slab_double"
+    }
+  }
+}

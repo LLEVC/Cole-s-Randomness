@@ -65,7 +65,6 @@ public static class Modelcustom_model extends ModelBase {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 		this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
 		this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
-		this.Head.rotateAngleZ = f3 / (180F / (float) Math.PI);
 		this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
 		this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 	}

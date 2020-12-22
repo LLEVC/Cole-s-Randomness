@@ -24,15 +24,15 @@ public class ItemGodHoe extends ElementsColesRandomnessMod.ModElement {
 	@GameRegistry.ObjectHolder("coles_randomness:god_hoe")
 	public static final Item block = null;
 	public ItemGodHoe(ElementsColesRandomnessMod instance) {
-		super(instance, 390);
+		super(instance, 501);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("GOD_HOE", 20, 6280, 24f, 0f, 140)) {
+		elements.items.add(() -> new ItemHoe(EnumHelper.addToolMaterial("GOD_HOE", 10, 2380, 16f, 0f, 70)) {
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("hoe", 20);
+				ret.put("hoe", 10);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("god_hoe").setRegistryName("god_hoe").setCreativeTab(CreativeTabs.TOOLS));

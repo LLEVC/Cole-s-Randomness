@@ -110,11 +110,11 @@ public class GuiVendingGUI extends ElementsColesRandomnessMod.ModElement {
 
 		@Override
 		protected void drawGuiContainerBackgroundLayer(float par1, int par2, int par3) {
-			GL11.glColor4f(1.0F, 1.0F, 1.0F, 1.0F);
+			GL11.glColor4f(1, 1, 1, 1);
 			this.mc.renderEngine.bindTexture(texture);
 			int k = (this.width - this.xSize) / 2;
 			int l = (this.height - this.ySize) / 2;
-			this.drawTexturedModalRect(k, l, 0, 0, this.xSize, this.ySize);
+			this.drawModalRectWithCustomSizedTexture(k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 			zLevel = 100.0F;
 		}
 
@@ -135,7 +135,7 @@ public class GuiVendingGUI extends ElementsColesRandomnessMod.ModElement {
 
 		@Override
 		protected void drawGuiContainerForegroundLayer(int par1, int par2) {
-			this.fontRenderer.drawString("Vending Machine", 1, -11, -65536);
+			this.fontRenderer.drawString("Vending Machine", 0, -11, -65536);
 		}
 
 		@Override
@@ -152,7 +152,7 @@ public class GuiVendingGUI extends ElementsColesRandomnessMod.ModElement {
 			Keyboard.enableRepeatEvents(true);
 			this.buttonList.clear();
 			this.buttonList.add(new GuiButton(0, this.guiLeft + 6, this.guiTop + 6, 50, 20, "Chips"));
-			this.buttonList.add(new GuiButton(1, this.guiLeft + 58, this.guiTop + 6, 40, 20, "Soda"));
+			this.buttonList.add(new GuiButton(1, this.guiLeft + 57, this.guiTop + 6, 40, 20, "Soda"));
 		}
 
 		@Override

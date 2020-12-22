@@ -1,0 +1,26 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:demon_log"
+    },
+    "1": {
+      "item": "coles_randomness:demon_log"
+    },
+    "2": {
+      "item": "coles_randomness:demon_log"
+    },
+    "3": {
+      "item": "coles_randomness:demon_log"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:demon_wood",
+    "count": 3
+  }
+}

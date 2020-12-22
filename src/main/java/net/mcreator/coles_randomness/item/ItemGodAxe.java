@@ -27,7 +27,7 @@ public class ItemGodAxe extends ElementsColesRandomnessMod.ModElement {
 	@GameRegistry.ObjectHolder("coles_randomness:god_axe")
 	public static final Item block = null;
 	public ItemGodAxe(ElementsColesRandomnessMod instance) {
-		super(instance, 387);
+		super(instance, 498);
 	}
 
 	@Override
@@ -46,8 +46,8 @@ public class ItemGodAxe extends ElementsColesRandomnessMod.ModElement {
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("GOD_AXE", 20, 6280, 24f, 16f, 140), effective_items_set);
-			this.attackDamage = 16f;
+			super(EnumHelper.addToolMaterial("GOD_AXE", 10, 2380, 16f, 6f, 70), effective_items_set);
+			this.attackDamage = 6f;
 			this.attackSpeed = -3f;
 		}
 

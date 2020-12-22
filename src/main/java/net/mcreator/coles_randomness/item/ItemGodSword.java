@@ -29,12 +29,12 @@ public class ItemGodSword extends ElementsColesRandomnessMod.ModElement {
 	@GameRegistry.ObjectHolder("coles_randomness:god_sword")
 	public static final Item block = null;
 	public ItemGodSword(ElementsColesRandomnessMod instance) {
-		super(instance, 388);
+		super(instance, 499);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("GOD_SWORD", 20, 12000, 24f, 34f, 140)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("GOD_SWORD", 10, 2380, 16f, 6f, 70)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
@@ -42,14 +42,14 @@ public class ItemGodSword extends ElementsColesRandomnessMod.ModElement {
 					multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
 							new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Weapon modifier", (double) this.getAttackDamage(), 0));
 					multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
-							new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -2, 0));
+							new AttributeModifier(ATTACK_SPEED_MODIFIER, "Weapon modifier", -3, 0));
 				}
 				return multimap;
 			}
 
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("sword", 20);
+				ret.put("sword", 10);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("god_sword").setRegistryName("god_sword").setCreativeTab(CreativeTabs.COMBAT));

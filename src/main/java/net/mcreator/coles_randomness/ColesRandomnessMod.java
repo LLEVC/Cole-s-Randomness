@@ -45,7 +45,7 @@ import java.util.function.Supplier;
 @Mod(modid = ColesRandomnessMod.MODID, version = ColesRandomnessMod.VERSION)
 public class ColesRandomnessMod {
 	public static final String MODID = "coles_randomness";
-	public static final String VERSION = "1.5.0preV3";
+	public static final String VERSION = "1.5.0preV4";
 	public static final SimpleNetworkWrapper PACKET_HANDLER = NetworkRegistry.INSTANCE.newSimpleChannel("coles_randomness:a");
 	@SidedProxy(clientSide = "net.mcreator.coles_randomness.ClientProxyColesRandomnessMod", serverSide = "net.mcreator.coles_randomness.ServerProxyColesRandomnessMod")
 	public static IProxyColesRandomnessMod proxy;

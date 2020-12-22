@@ -37,12 +37,11 @@ public class BiomeXrayBiome extends ElementsColesRandomnessMod.ModElement {
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
-			super(new Biome.BiomeProperties("xraybiome").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-14329397).setHeightVariation(0.2F)
+			super(new Biome.BiomeProperties("Xray Biome").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-14329397).setHeightVariation(0.2F)
 					.setTemperature(0.5F));
 			setRegistryName("xraybiome");
 			topBlock = Blocks.GRASS.getDefaultState();
 			fillerBlock = BlockXrayBlock.block.getDefaultState();
-			decorator.generateFalls = true;
 			decorator.treesPerChunk = 3;
 			decorator.flowersPerChunk = 10;
 			decorator.grassPerChunk = 10;

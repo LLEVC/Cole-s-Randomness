@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 13,
   "_type": "block",
   "definition": {
     "texture": "energy block",
@@ -12,6 +12,7 @@
     "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
+    "displayFluidOverlay": false,
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -28,6 +29,7 @@
     "hardness": 8.0,
     "resistance": 6.0,
     "hasGravity": false,
+    "isWaterloggable": false,
     "creativeTab": {
       "value": "MISC"
     },
@@ -36,6 +38,7 @@
       "value": ""
     },
     "dropAmount": 1,
+    "useLootTableForDrops": false,
     "isBeaconBase": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,

@@ -24,18 +24,18 @@ public class ItemGodShovel extends ElementsColesRandomnessMod.ModElement {
 	@GameRegistry.ObjectHolder("coles_randomness:god_shovel")
 	public static final Item block = null;
 	public ItemGodShovel(ElementsColesRandomnessMod instance) {
-		super(instance, 389);
+		super(instance, 500);
 	}
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("GOD_SHOVEL", 20, 6280, 24f, 16f, 140)) {
+		elements.items.add(() -> new ItemSpade(EnumHelper.addToolMaterial("GOD_SHOVEL", 10, 2380, 16f, 6f, 70)) {
 			{
 				this.attackSpeed = -3f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("spade", 20);
+				ret.put("spade", 10);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("god_shovel").setRegistryName("god_shovel").setCreativeTab(CreativeTabs.TOOLS));

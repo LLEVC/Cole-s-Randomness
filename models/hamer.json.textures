@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "meat_ham",
+        "1": "handleforhammer"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:god_planks"
+    },
+    "1": {
+      "item": "coles_randomness:god_planks"
+    },
+    "2": {
+      "item": "coles_randomness:god_planks"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:god_slab",
+    "data": 0,
+    "count": 6
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "coles_randomness:blocks/god_log_top",
+    "up": "coles_randomness:blocks/god_log_top",
+    "north": "coles_randomness:blocks/god_log_side",
+    "east": "coles_randomness:blocks/god_log_side",
+    "south": "coles_randomness:blocks/god_log_side",
+    "west": "coles_randomness:blocks/god_log_side",
+    "particle": "coles_randomness:blocks/god_log_top"
+  }
+}

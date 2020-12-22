@@ -48,12 +48,11 @@ public class BiomeRichBiome extends ElementsColesRandomnessMod.ModElement {
 	}
 	static class BiomeGenCustom extends Biome {
 		public BiomeGenCustom() {
-			super(new Biome.BiomeProperties("richbiome").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-65536).setHeightVariation(0.2F)
+			super(new Biome.BiomeProperties("Rich Biome").setRainfall(0.5F).setBaseHeight(0.1F).setWaterColor(-65536).setHeightVariation(0.2F)
 					.setTemperature(0.5F));
 			setRegistryName("richbiome");
 			topBlock = Blocks.DIAMOND_BLOCK.getDefaultState();
 			fillerBlock = Blocks.EMERALD_BLOCK.getDefaultState();
-			decorator.generateFalls = true;
 			decorator.treesPerChunk = 3;
 			decorator.flowersPerChunk = 10;
 			decorator.grassPerChunk = 10;
