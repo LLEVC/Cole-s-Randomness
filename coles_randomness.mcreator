@@ -4447,6 +4447,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_biome"
+    },
+    {
+      "name": "TestItemGithub",
+      "type": "item",
+      "sortid": 507,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_item_github"
     }
   ],
   "variable_elements": [],
@@ -4499,6 +4508,7 @@
       "item.steelhoe.name": "Steel Hoe",
       "item.god_gem.name": "God",
       "tile.demon_log.name": "Demon Log",
+      "item.test_item_github.name": "Test Item Github",
       "item.jelloblock.name": "Edable jello block",
       "item.coppersword.name": "Copper Sword",
       "item.rodofenergy.name": "Lighting Rod",
