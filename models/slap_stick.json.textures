@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "slapstick1",
+        "1": "connect",
+        "2": "can_silver",
+        "missing": "can_silver"
+      },
+      "name": "default"
+    }
+  }
+}

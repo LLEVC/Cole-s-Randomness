@@ -4269,15 +4269,6 @@
       "registry_name": "big_axe"
     },
     {
-      "name": "GodWood",
-      "type": "block",
-      "sortid": 453,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "god_wood"
-    },
-    {
       "name": "GodLog",
       "type": "block",
       "sortid": 454,
@@ -4323,15 +4314,6 @@
       "registry_name": "god_slab"
     },
     {
-      "name": "GodWoodRecipe",
-      "type": "recipe",
-      "sortid": 462,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "god_wood_recipe"
-    },
-    {
       "name": "GodPlanksRecipe",
       "type": "recipe",
       "sortid": 463,
@@ -4366,15 +4348,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "god_stick_recipe"
-    },
-    {
-      "name": "DemonWood",
-      "type": "block",
-      "sortid": 469,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_wood"
     },
     {
       "name": "DemonLog",
@@ -4420,15 +4393,6 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_slab"
-    },
-    {
-      "name": "DemonWoodRecipe",
-      "type": "recipe",
-      "sortid": 478,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "demon_wood_recipe"
     },
     {
       "name": "DemonPlanksRecipe",
@@ -4563,7 +4527,6 @@
       "item.steelsword.name": "Steel Sword",
       "tile.dream_ore.name": "Dream Ore",
       "item.rifleammo.name": "Rifle Ammo",
-      "tile.god_wood.name": "God Wood",
       "item.powerball.name": "Powerball ",
       "item.paper_blood.name": "Paper Blood",
       "item.tntfood.name": "TNT Food",
@@ -4713,7 +4676,6 @@
       "item.dusteddiamonddust.name": "DustedDiamond",
       "item.singlepopcorn.name": "Single Popcorn Kernel",
       "item.silverarmorhelmet.name": "Silver Helmet",
-      "tile.demon_wood.name": "Demon Wood",
       "item.popcorn.name": "Popcorn",
       "item.prototype.name": "Prototype",
       "item.silveraxe.name": "Silver Axe",

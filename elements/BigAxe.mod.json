@@ -2,9 +2,9 @@
   "_fv": 13,
   "_type": "tool",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "ole_ace",
-    "customModelName": "Normal",
+    "customModelName": "slap_stick:default",
     "name": "Extremely Big Axe!",
     "specialInfo": [
       "Kill them MotherFr*ckers!"
