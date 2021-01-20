@@ -3,8 +3,8 @@
     "default": {
       "map": {
         "0": "slapstick1",
-        "1": "connect",
-        "2": "can_silver",
+        "1": "axe",
+        "2": "connect",
         "missing": "can_silver"
       },
       "name": "default"

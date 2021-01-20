@@ -7,13 +7,18 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 
+import net.minecraft.world.World;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
+import net.mcreator.coles_randomness.procedure.ProcedureTestItemGithubItemInInventoryTick;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class ItemTestItemGithub extends ElementsColesRandomnessMod.ModElement {
@@ -39,7 +44,7 @@ public class ItemTestItemGithub extends ElementsColesRandomnessMod.ModElement {
 			maxStackSize = 64;
 			setUnlocalizedName("test_item_github");
 			setRegistryName("test_item_github");
-			setCreativeTab(CreativeTabs.MISC);
+			setCreativeTab(null);
 		}
 
 		@Override
@@ -61,6 +66,19 @@ public class ItemTestItemGithub extends ElementsColesRandomnessMod.ModElement {
 		@SideOnly(Side.CLIENT)
 		public boolean hasEffect(ItemStack itemstack) {
 			return true;
+		}
+
+		@Override
+		public void onUpdate(ItemStack itemstack, World world, Entity entity, int slot, boolean par5) {
+			super.onUpdate(itemstack, world, entity, slot, par5);
+			int x = (int) entity.posX;
+			int y = (int) entity.posY;
+			int z = (int) entity.posZ;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				ProcedureTestItemGithubItemInInventoryTick.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

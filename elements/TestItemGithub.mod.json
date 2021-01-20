@@ -6,9 +6,9 @@
     "texture": "placeholder",
     "customModelName": "Normal",
     "name": "Test Item Github",
-    "rarity": "COMMON",
+    "rarity": "EPIC",
     "creativeTab": {
-      "value": "MISC"
+      "value": "No creative tab entry"
     },
     "stackSize": 64,
     "enchantability": 0,
@@ -27,6 +27,9 @@
     "hasGlow": true,
     "guiBoundTo": "Trade",
     "inventorySize": 0,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onItemInInventoryTick": {
+      "name": "TestItemGithubItemInInventoryTick"
+    }
   }
 }

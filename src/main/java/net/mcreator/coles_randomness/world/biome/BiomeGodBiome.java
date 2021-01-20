@@ -19,6 +19,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.coles_randomness.block.BlockGodOre;
 import net.mcreator.coles_randomness.block.BlockGodLog;
+import net.mcreator.coles_randomness.block.BlockGodLeaves;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Random;
@@ -131,8 +132,8 @@ public class BiomeGodBiome extends ElementsColesRandomnessMod.ModElement {
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getBlock().isLeaves(state, world, blockpos)
 												|| state.getBlock() == BlockGodOre.block.getDefaultState().getBlock()
-												|| state.getBlock() == BlockGodLog.block.getDefaultState().getBlock()) {
-											this.setBlockAndNotifyAdequately(world, blockpos, BlockGodLog.block.getDefaultState());
+												|| state.getBlock() == BlockGodLeaves.block.getDefaultState().getBlock()) {
+											this.setBlockAndNotifyAdequately(world, blockpos, BlockGodLeaves.block.getDefaultState());
 										}
 									}
 								}
@@ -142,7 +143,7 @@ public class BiomeGodBiome extends ElementsColesRandomnessMod.ModElement {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == BlockGodOre.block.getDefaultState().getBlock()
-									|| state.getBlock() == BlockGodLog.block.getDefaultState().getBlock()) {
+									|| state.getBlock() == BlockGodLeaves.block.getDefaultState().getBlock()) {
 								this.setBlockAndNotifyAdequately(world, position.up(genh), BlockGodLog.block.getDefaultState());
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
@@ -163,7 +164,7 @@ public class BiomeGodBiome extends ElementsColesRandomnessMod.ModElement {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
 									if (state.getBlock().isLeaves(state, world, bpos)
-											|| state.getBlock() == BlockGodLog.block.getDefaultState().getBlock()) {
+											|| state.getBlock() == BlockGodLeaves.block.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -214,7 +215,7 @@ public class BiomeGodBiome extends ElementsColesRandomnessMod.ModElement {
 		@Override
 		protected boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == BlockGodLog.block.getDefaultState().getBlock()
-					|| blockType == BlockGodLog.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(2).getBlock()
+					|| blockType == BlockGodLeaves.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(2).getBlock()
 					|| blockType == BlockGodOre.block.getDefaultState().getBlock();
 		}
 

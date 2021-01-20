@@ -18,6 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
 import net.minecraft.init.Blocks;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.block.material.Material;
@@ -25,7 +26,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
 import net.mcreator.coles_randomness.item.ItemRadiationIngot;
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Random;
@@ -83,7 +83,7 @@ public class BlockRadiationOre extends ElementsColesRandomnessMod.ModElement {
 			setResistance(5F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		}
 
 		@Override

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "normal": {
+      "model": "coles_randomness:computer_deco"
+    },
+    "facing=north": {
+      "model": "coles_randomness:computer_deco"
+    },
+    "facing=east": {
+      "model": "coles_randomness:computer_deco",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "coles_randomness:computer_deco",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "coles_randomness:computer_deco",
+      "y": 270
+    }
+  }
+}

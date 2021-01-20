@@ -1,8 +1,8 @@
 {
   "id_map": {
-    "GUI": 3,
     "ENTITY": 47,
-    "DIMENSION": 2
+    "DIMENSION": 2,
+    "GUI": 3
   },
   "mod_elements": [
     {
@@ -3929,18 +3929,6 @@
       "registry_name": "needle_blood"
     },
     {
-      "name": "Monkey",
-      "type": "mob",
-      "sortid": 425,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {
-        "0": 45,
-        "1": 46
-      },
-      "registry_name": "monkey"
-    },
-    {
       "name": "NeedlePaper",
       "type": "item",
       "sortid": 426,
@@ -4456,6 +4444,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "test_item_github"
+    },
+    {
+      "name": "ComputerDeco",
+      "type": "block",
+      "sortid": 508,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "computer_deco"
+    },
+    {
+      "name": "TestItemGithubItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 509,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test_item_github_item_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -4537,6 +4551,7 @@
       "item.steelsword.name": "Steel Sword",
       "tile.dream_ore.name": "Dream Ore",
       "item.rifleammo.name": "Rifle Ammo",
+      "tile.computer_deco.name": "Computer Deco",
       "item.powerball.name": "Powerball ",
       "item.paper_blood.name": "Paper Blood",
       "item.tntfood.name": "TNT Food",
@@ -4720,8 +4735,7 @@
       "item.silverarmorlegs.name": "Silver Leggings",
       "entity.redstonemaster.name": "RedstoneMast3r\u0027s clone",
       "item.ritehoe.name": "R-ite Hoe",
-      "item.emeraldarmorhelmet.name": "Emerald Helmet",
-      "entity.monkey.name": "Monkey"
+      "item.emeraldarmorhelmet.name": "Emerald Helmet"
     }
   },
   "workspaceSettings": {

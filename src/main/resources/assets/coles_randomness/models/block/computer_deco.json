@@ -1,0 +1,8 @@
+{
+  "parent": "coles_randomness:custom/computer+mouse",
+  "textures": {
+    "all": "coles_randomness:blocks/computermouse_textures",
+    "particle": "coles_randomness:blocks/computermouse_textures",
+    "texture": "coles_randomness:blocks/computermouse_textures"
+  }
+}
