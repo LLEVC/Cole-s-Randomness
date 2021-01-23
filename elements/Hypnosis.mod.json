@@ -1,0 +1,22 @@
+{
+  "_fv": 13,
+  "_type": "potion",
+  "definition": {
+    "name": "Confusion",
+    "effectName": "Hypnosis",
+    "icon": "cunfusion.png",
+    "color": {
+      "value": -65281,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": true,
+    "isBenefitical": false,
+    "registerPotionType": true,
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onActiveTick": {
+      "name": "HypnosisOnPotionActiveTick"
+    }
+  }
+}

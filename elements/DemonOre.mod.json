@@ -14,6 +14,7 @@
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
+    "particleTexture": "",
     "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
@@ -66,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 20,
+    "breakHarvestLevel": 16,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -100,9 +101,9 @@
         "value": "Blocks.STONE"
       }
     ],
-    "frequencyPerChunks": 1,
-    "frequencyOnChunk": 0,
-    "minGenerateHeight": 1,
+    "frequencyPerChunks": 5,
+    "frequencyOnChunk": 5,
+    "minGenerateHeight": 0,
     "maxGenerateHeight": 7
   }
 }

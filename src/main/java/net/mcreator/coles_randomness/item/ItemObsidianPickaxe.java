@@ -29,13 +29,13 @@ public class ItemObsidianPickaxe extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("OBSIDIANPICKAXE", 2, 250, 6f, 0f, 14)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("OBSIDIANPICKAXE", 8, 250, 6f, 0f, 14)) {
 			{
 				this.attackSpeed = -3f;
 			}
 			public Set<String> getToolClasses(ItemStack stack) {
 				HashMap<String, Integer> ret = new HashMap<String, Integer>();
-				ret.put("pickaxe", 2);
+				ret.put("pickaxe", 8);
 				return ret.keySet();
 			}
 		}.setUnlocalizedName("obsidianpickaxe").setRegistryName("obsidianpickaxe").setCreativeTab(CreativeTabs.TOOLS));

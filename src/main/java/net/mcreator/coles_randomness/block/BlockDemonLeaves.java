@@ -15,6 +15,7 @@ import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.statemap.StateMap;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -24,7 +25,6 @@ import net.minecraft.block.BlockPlanks;
 import net.minecraft.block.BlockLeaves;
 import net.minecraft.block.Block;
 
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 @ElementsColesRandomnessMod.ModElement.Tag
@@ -57,7 +57,7 @@ public class BlockDemonLeaves extends ElementsColesRandomnessMod.ModElement {
 			setResistance(0.2F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 			this.setDefaultState(this.blockState.getBaseState().withProperty(CHECK_DECAY, true).withProperty(DECAYABLE, true));
 		}
 

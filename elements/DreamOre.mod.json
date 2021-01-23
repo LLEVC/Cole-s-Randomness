@@ -26,7 +26,7 @@
     "Mz": 1.0,
     "name": "Dream Ore",
     "specialInfo": [],
-    "hardness": 24.0,
+    "hardness": 12.0,
     "resistance": 26.390158215457888,
     "hasGravity": false,
     "isWaterloggable": false,
@@ -67,7 +67,7 @@
     },
     "luminance": 0.0,
     "unbreakable": false,
-    "breakHarvestLevel": 16,
+    "breakHarvestLevel": 7,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

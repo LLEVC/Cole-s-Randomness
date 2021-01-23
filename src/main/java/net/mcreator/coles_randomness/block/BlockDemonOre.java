@@ -58,11 +58,11 @@ public class BlockDemonOre extends ElementsColesRandomnessMod.ModElement {
 			dimensionCriteria = true;
 		if (!dimensionCriteria)
 			return;
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 5; i++) {
 			int x = chunkX + random.nextInt(16);
-			int y = random.nextInt(6) + 1;
+			int y = random.nextInt(7) + 0;
 			int z = chunkZ + random.nextInt(16);
-			(new WorldGenMinable(block.getDefaultState(), 0, new com.google.common.base.Predicate<IBlockState>() {
+			(new WorldGenMinable(block.getDefaultState(), 5, new com.google.common.base.Predicate<IBlockState>() {
 				public boolean apply(IBlockState blockAt) {
 					boolean blockCriteria = false;
 					IBlockState require;
@@ -78,7 +78,7 @@ public class BlockDemonOre extends ElementsColesRandomnessMod.ModElement {
 			super(Material.ROCK);
 			setUnlocalizedName("demon_ore");
 			setSoundType(SoundType.STONE);
-			setHarvestLevel("pickaxe", 20);
+			setHarvestLevel("pickaxe", 16);
 			setHardness(30F);
 			setResistance(31.547867224009668F);
 			setLightLevel(0F);

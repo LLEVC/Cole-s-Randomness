@@ -42,7 +42,7 @@ public class BlockGodOreBlock extends ElementsColesRandomnessMod.ModElement {
 			super(Material.IRON);
 			setUnlocalizedName("god_ore_block");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 20);
+			setHarvestLevel("pickaxe", 16);
 			setHardness(5F);
 			setResistance(10F);
 			setLightLevel(0F);

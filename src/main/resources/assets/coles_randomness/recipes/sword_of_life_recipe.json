@@ -1,0 +1,16 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "coles_randomness:demon_sword"
+    },
+    {
+      "item": "coles_randomness:god_sword"
+    }
+  ],
+  "result": {
+    "item": "coles_randomness:sword_of_life",
+    "count": 1
+  }
+}

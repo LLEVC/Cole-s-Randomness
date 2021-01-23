@@ -42,7 +42,7 @@ public class BlockDreamOreBlock extends ElementsColesRandomnessMod.ModElement {
 			super(Material.IRON);
 			setUnlocalizedName("dream_ore_block");
 			setSoundType(SoundType.METAL);
-			setHarvestLevel("pickaxe", 16);
+			setHarvestLevel("pickaxe", 7);
 			setHardness(5F);
 			setResistance(10F);
 			setLightLevel(0F);

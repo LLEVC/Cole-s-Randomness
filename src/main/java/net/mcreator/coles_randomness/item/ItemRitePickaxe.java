@@ -29,7 +29,7 @@ public class ItemRitePickaxe extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("RITEPICKAXE", 4, 660, 9f, 0f, 28)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("RITEPICKAXE", 4, 1560, 9f, 0f, 28)) {
 			{
 				this.attackSpeed = -3f;
 			}

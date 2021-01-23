@@ -15,6 +15,7 @@ import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSlab;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.Variant;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
@@ -25,7 +26,6 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockSlab;
 import net.minecraft.block.Block;
 
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Random;
@@ -62,7 +62,7 @@ public class BlockDemonSlab extends ElementsColesRandomnessMod.ModElement {
 			setResistance(3F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 			IBlockState state = this.blockState.getBaseState().withProperty(VARIANT, BlockCustom.Variant.DEFAULT);
 			if (!this.isDouble())
 				state = state.withProperty(BlockSlab.HALF, EnumBlockHalf.BOTTOM);

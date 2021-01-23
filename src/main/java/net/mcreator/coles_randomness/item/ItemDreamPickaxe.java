@@ -29,7 +29,7 @@ public class ItemDreamPickaxe extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("DREAM_PICKAXE", 16, 4595, 21f, 12f, 112)) {
+		elements.items.add(() -> new ItemPickaxe(EnumHelper.addToolMaterial("DREAM_PICKAXE", 16, 20595, 21f, 12f, 112)) {
 			{
 				this.attackSpeed = -3f;
 			}
