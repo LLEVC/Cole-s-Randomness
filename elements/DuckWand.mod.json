@@ -1,0 +1,46 @@
+{
+  "_fv": 13,
+  "_type": "gun",
+  "definition": {
+    "renderType": 1,
+    "texture": "placeholder",
+    "customModelName": "ducky_wand:default",
+    "name": "Duck Wand",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 0,
+    "actionSound": {
+      "value": "entity.chicken.ambient"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": true,
+    "damageVsEntity": 3.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 8,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.EGG"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "DuckWandBulletHitsEverything"
+    },
+    "onBulletHitsPlayer": {
+      "name": "DuckWandBulletHitsEverything"
+    },
+    "onBulletHitsEntity": {
+      "name": "DuckWandBulletHitsEverything"
+    }
+  }
+}

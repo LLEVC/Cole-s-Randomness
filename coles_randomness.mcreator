@@ -1,8 +1,8 @@
 {
   "id_map": {
+    "ENTITY": 49,
     "GUI": 3,
-    "DIMENSION": 2,
-    "ENTITY": 47
+    "DIMENSION": 2
   },
   "mod_elements": [
     {
@@ -943,14 +943,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Candle",
-      "type": "item",
-      "sortid": 100,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
     },
     {
       "name": "GravelFlint",
@@ -4549,6 +4541,129 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "demon_log_recipe"
+    },
+    {
+      "name": "DuckWandBulletHitsAnything",
+      "type": "procedure",
+      "sortid": 516,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "duck_wand_bullet_hits_anything"
+    },
+    {
+      "name": "DuckWand",
+      "type": "gun",
+      "sortid": 516,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 48
+      },
+      "registry_name": "duck_wand"
+    },
+    {
+      "name": "DuckWandBulletHitsEverything",
+      "type": "procedure",
+      "sortid": 517,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "duck_wand_bullet_hits_everything",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Candle",
+      "type": "block",
+      "sortid": 518,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "candle"
+    },
+    {
+      "name": "ZapperLivingEntityIsHitWithTool",
+      "type": "procedure",
+      "sortid": 519,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zapper_living_entity_is_hit_with_tool",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "ZapperProjectile",
+      "type": "item",
+      "sortid": 520,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zapper_projectile"
+    },
+    {
+      "name": "ZapperBulletHitsPlayer",
+      "type": "procedure",
+      "sortid": 521,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "zapper_bullet_hits_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Zapper",
+      "type": "gun",
+      "sortid": 521,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {
+        "0": 49
+      },
+      "registry_name": "zapper"
     }
   ],
   "variable_elements": [],
@@ -4617,7 +4732,6 @@
       "item.kolbesgun.name": "P90-9",
       "item.fools_goldarmorhelmet.name": "Fools_Gold Helmet",
       "item.copperarmorlegs.name": "Copper Leggings",
-      "item.candle.name": "Candle",
       "item.woodenarmorboots.name": "Wooden Boots",
       "item.steelarmorhelmet.name": "Steel Helmet",
       "item.fools_goldshovel.name": "Fools Gold Shovel",
@@ -4630,6 +4744,7 @@
       "item.steelsword.name": "Steel Sword",
       "tile.dream_ore.name": "Dream Ore",
       "item.rifleammo.name": "Rifle Ammo",
+      "item.zapper.name": "Zapper",
       "tile.computer_deco.name": "Computer Deco",
       "item.powerball.name": "Powerball ",
       "item.paper_blood.name": "Paper Blood",
@@ -4771,6 +4886,7 @@
       "tile.rubyore.name": "Ruby Ore",
       "item.steelarmorbody.name": "Steel Chestplate",
       "item.teleportbow.name": "Teleport Bow",
+      "tile.candle.name": "Candle",
       "item.god_axe.name": "God Axe",
       "tile.demon_stairs.name": "Demon Stairs",
       "item.wither_soul.name": "Wither\u0027s Soul",
@@ -4796,6 +4912,7 @@
       "item.god_shovel.name": "God Shovel",
       "tile.energyblock.name": "Lighting Block",
       "tile.foodgen.name": "Food Gen (put in ground)",
+      "item.zapper_projectile.name": "Zapper Projectile",
       "item.dream_shovel.name": "Dream Shovel",
       "item.god_armorhelmet.name": "God Helmet",
       "item.emeraldarmorlegs.name": "Emerald Leggings",
@@ -4811,6 +4928,7 @@
       "tile.god_ore.name": "God Ore",
       "tile.flowerofdreams.name": "Flower of Dreams",
       "item.demon_shovel.name": "Demon Shovel",
+      "item.duck_wand.name": "Duck Wand",
       "item.fools_goldarmorlegs.name": "Fools_Gold Leggings",
       "tile.god_log.name": "God Log",
       "item.opicon.name": "OP icon",

@@ -1,0 +1,9 @@
+{
+  "parent": "coles_randomness:custom/the_candle",
+  "textures": {
+    "all": "coles_randomness:blocks/candle thingy",
+    "particle": "coles_randomness:blocks/candle thingy",
+    "0": "coles_randomness:blocks/chair is wood",
+    "1": "coles_randomness:blocks/chair is wood"
+  }
+}

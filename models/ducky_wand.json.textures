@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "oh_cool_a_stick",
+        "1": "ducky_duck_wand"
+      },
+      "name": "default"
+    }
+  }
+}

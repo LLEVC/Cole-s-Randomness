@@ -69,7 +69,7 @@ public class ItemSwordOfLife extends ElementsColesRandomnessMod.ModElement {
 					ProcedureSwordOfLifeToolInInventoryTick.executeProcedure($_dependencies);
 				}
 			}
-		}.setUnlocalizedName("sword_of_life").setRegistryName("sword_of_life").setCreativeTab(CreativeTabs.TOOLS));
+		}.setUnlocalizedName("sword_of_life").setRegistryName("sword_of_life").setCreativeTab(CreativeTabs.COMBAT));
 	}
 
 	@SideOnly(Side.CLIENT)
