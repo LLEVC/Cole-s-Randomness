@@ -12,7 +12,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EntityEquipmentSlot;
-import net.minecraft.init.Blocks;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
@@ -61,77 +60,24 @@ public class ItemCrowbar extends ElementsColesRandomnessMod.ModElement {
 		}
 
 		@Override
+		public boolean canHarvestBlock(IBlockState blockIn) {
+			return true;
+		}
+
+		@Override
 		public float getDestroySpeed(ItemStack par1ItemStack, IBlockState par2Block) {
-			IBlockState require;
-			require = Blocks.LOG.getDefaultState();
-			if (par2Block.getBlock() == require.getBlock())
-				return 8f;
-			require = Blocks.PLANKS.getStateFromMeta(0);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			require = Blocks.PLANKS.getStateFromMeta(1);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			require = Blocks.PLANKS.getStateFromMeta(2);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			require = Blocks.PLANKS.getStateFromMeta(4);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			require = Blocks.PLANKS.getStateFromMeta(3);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			require = Blocks.PLANKS.getStateFromMeta(5);
-			try {
-				if ((par2Block.getBlock() == require.getBlock())
-						&& (par2Block.getBlock().getMetaFromState(par2Block) == require.getBlock().getMetaFromState(require)))
-					return 8f;
-			} catch (Exception e) {
-				if (par2Block.getBlock() == require.getBlock())
-					return 8f;
-			}
-			return 0;
+			return 8f;
+		}
+
+		@Override
+		public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
+			stack.damageItem(1, attacker);
+			return true;
 		}
 
 		@Override
 		public boolean onBlockDestroyed(ItemStack stack, World worldIn, IBlockState state, BlockPos pos, EntityLivingBase entityLiving) {
 			stack.damageItem(1, entityLiving);
-			return true;
-		}
-
-		@Override
-		public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
-			stack.damageItem(2, attacker);
 			return true;
 		}
 

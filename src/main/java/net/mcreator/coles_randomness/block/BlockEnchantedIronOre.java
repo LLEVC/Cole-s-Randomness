@@ -77,7 +77,7 @@ public class BlockEnchantedIronOre extends ElementsColesRandomnessMod.ModElement
 		public BlockCustom() {
 			super(Material.ROCK);
 			setUnlocalizedName("enchantedironore");
-			setSoundType(SoundType.GROUND);
+			setSoundType(SoundType.STONE);
 			setHarvestLevel("pickaxe", 1);
 			setHardness(5F);
 			setResistance(10F);
