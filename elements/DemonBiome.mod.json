@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "biome",
   "definition": {
     "name": "Demon Biome",
@@ -7,22 +7,6 @@
       "value": "Blocks.DIRT#1"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:DemonOre"
-    },
-    "treeType": 1,
-    "vanillaTreeType": "Default",
-    "minHeight": 7,
-    "spawnVines": true,
-    "treeVines": {
-      "value": "CUSTOM:DemonOre"
-    },
-    "treeStem": {
-      "value": "CUSTOM:DemonLog"
-    },
-    "treeBranch": {
-      "value": "CUSTOM:DemonLeaves"
-    },
-    "treeFruits": {
       "value": "CUSTOM:DemonOre"
     },
     "grassColor": {
@@ -33,26 +17,61 @@
       "value": -3407872,
       "falpha": 0.0
     },
-    "treesPerChunk": 3,
+    "ambientSound": {
+      "value": ""
+    },
+    "additionsSound": {
+      "value": ""
+    },
+    "music": {
+      "value": ""
+    },
+    "moodSound": {
+      "value": ""
+    },
+    "moodSoundDelay": 0,
+    "spawnParticles": false,
+    "particleToSpawn": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "particlesProbability": 0.0,
+    "biomeCategory": "NONE",
+    "parent": {
+      "value": "No parent"
+    },
+    "rainingPossibility": 0.5,
+    "temperature": 0.5,
+    "baseHeight": 0.1,
+    "heightVariation": 0.2,
+    "biomeType": "WARM",
+    "spawnBiome": true,
+    "biomeWeight": 10,
+    "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 20,
     "flowersPerChunk": 4,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
-    "sandPathcesPerChunk": 0,
+    "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "rainingPossibility": 0.5,
-    "temperature": 0.5,
-    "baseHeight": 0.1,
-    "heightVariation": 0.2,
-    "spawnBiome": true,
-    "biomeWeight": 10,
-    "biomeType": "WARM",
-    "biomeCategory": "NONE",
-    "parent": {
-      "value": "No parent"
+    "treesPerChunk": 3,
+    "vanillaTreeType": "Default",
+    "treeType": 1,
+    "minHeight": 7,
+    "maxWaterDepth": 0,
+    "treeStem": {
+      "value": "CUSTOM:DemonLog"
+    },
+    "treeBranch": {
+      "value": "CUSTOM:DemonLeaf"
+    },
+    "treeVines": {
+      "value": "CUSTOM:DemonOre"
+    },
+    "treeFruits": {
+      "value": "CUSTOM:DemonOre"
     },
     "spawnStronghold": false,
     "spawnMineshaft": false,
@@ -65,12 +84,12 @@
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
-    "biomeDictionaryTypes": [],
     "defaultFeatures": [
       "Caves",
       "MonsterRooms",
       "Structures",
-      "Ores"
+      "Ores",
+      "FrozenTopLayer"
     ],
     "spawnEntries": []
   }

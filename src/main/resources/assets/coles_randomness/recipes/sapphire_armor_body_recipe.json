@@ -1,0 +1,39 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:sapphire"
+    },
+    "2": {
+      "item": "coles_randomness:sapphire"
+    },
+    "3": {
+      "item": "coles_randomness:sapphire"
+    },
+    "4": {
+      "item": "coles_randomness:sapphire"
+    },
+    "5": {
+      "item": "coles_randomness:sapphire"
+    },
+    "6": {
+      "item": "coles_randomness:sapphire"
+    },
+    "7": {
+      "item": "coles_randomness:sapphire"
+    },
+    "8": {
+      "item": "coles_randomness:sapphire"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:sapphire_armorbody",
+    "count": 1
+  }
+}

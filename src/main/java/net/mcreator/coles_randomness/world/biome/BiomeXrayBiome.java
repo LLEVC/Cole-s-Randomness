@@ -49,7 +49,7 @@ public class BiomeXrayBiome extends ElementsColesRandomnessMod.ModElement {
 			decorator.bigMushroomsPerChunk = 1;
 			decorator.reedsPerChunk = 1;
 			decorator.cactiPerChunk = 0;
-			decorator.sandPatchesPerChunk = 1;
+			decorator.sandPatchesPerChunk = 0;
 			decorator.gravelPatchesPerChunk = 1;
 			this.spawnableMonsterList.clear();
 			this.spawnableCreatureList.clear();

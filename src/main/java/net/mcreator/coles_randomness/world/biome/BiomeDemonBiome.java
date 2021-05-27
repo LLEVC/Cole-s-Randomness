@@ -19,7 +19,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.coles_randomness.block.BlockDemonOre;
 import net.mcreator.coles_randomness.block.BlockDemonLog;
-import net.mcreator.coles_randomness.block.BlockDemonLeaves;
+import net.mcreator.coles_randomness.block.BlockDemonLeaf;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Random;
@@ -133,8 +133,8 @@ public class BiomeDemonBiome extends ElementsColesRandomnessMod.ModElement {
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getBlock().isLeaves(state, world, blockpos)
 												|| state.getBlock() == BlockDemonOre.block.getDefaultState().getBlock()
-												|| state.getBlock() == BlockDemonLeaves.block.getDefaultState().getBlock()) {
-											this.setBlockAndNotifyAdequately(world, blockpos, BlockDemonLeaves.block.getDefaultState());
+												|| state.getBlock() == BlockDemonLeaf.block.getDefaultState().getBlock()) {
+											this.setBlockAndNotifyAdequately(world, blockpos, BlockDemonLeaf.block.getDefaultState());
 										}
 									}
 								}
@@ -144,7 +144,7 @@ public class BiomeDemonBiome extends ElementsColesRandomnessMod.ModElement {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getBlock() == BlockDemonOre.block.getDefaultState().getBlock()
-									|| state.getBlock() == BlockDemonLeaves.block.getDefaultState().getBlock()) {
+									|| state.getBlock() == BlockDemonLeaf.block.getDefaultState().getBlock()) {
 								this.setBlockAndNotifyAdequately(world, position.up(genh), BlockDemonLog.block.getDefaultState());
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
@@ -165,7 +165,7 @@ public class BiomeDemonBiome extends ElementsColesRandomnessMod.ModElement {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
 									if (state.getBlock().isLeaves(state, world, bpos)
-											|| state.getBlock() == BlockDemonLeaves.block.getDefaultState().getBlock()) {
+											|| state.getBlock() == BlockDemonLeaf.block.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -216,7 +216,7 @@ public class BiomeDemonBiome extends ElementsColesRandomnessMod.ModElement {
 		@Override
 		protected boolean canGrowInto(Block blockType) {
 			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == BlockDemonLog.block.getDefaultState().getBlock()
-					|| blockType == BlockDemonLeaves.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(1).getBlock()
+					|| blockType == BlockDemonLeaf.block.getDefaultState().getBlock() || blockType == Blocks.DIRT.getStateFromMeta(1).getBlock()
 					|| blockType == BlockDemonOre.block.getDefaultState().getBlock();
 		}
 

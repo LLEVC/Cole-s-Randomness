@@ -3,8 +3,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "type": "forge:ore_dict",
-      "ore": "forgedemon_log"
+      "item": "coles_randomness:demon_log"
     }
   ],
   "result": {

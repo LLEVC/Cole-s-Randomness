@@ -1,0 +1,34 @@
+{
+  "_fv": 18,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "randomness_sword",
+    "customModelName": "Normal",
+    "name": "Randomness Sword",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "toolType": "Sword",
+    "harvestLevel": 20,
+    "efficiency": 24.0,
+    "attackSpeed": 1.0,
+    "enchantability": 140,
+    "damageVsEntity": 10000.0,
+    "usageCount": 0,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [
+      {
+        "value": "CUSTOM:RandomnessIngot"
+      }
+    ],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false,
+    "onRightClickedInAir": {
+      "name": "RandomnessSwordRightClickedInAir"
+    }
+  }
+}

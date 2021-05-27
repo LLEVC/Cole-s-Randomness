@@ -1,0 +1,42 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "1": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "2": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "3": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "4": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "5": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "6": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "7": {
+      "item": "coles_randomness:enderum_dust"
+    },
+    "8": {
+      "item": "coles_randomness:enderum_dust"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:enderum_block",
+    "count": 1
+  }
+}

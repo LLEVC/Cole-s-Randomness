@@ -16,13 +16,13 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.state.IBlockState;
 
 import net.mcreator.coles_randomness.procedure.ProcedureRocketJumperRightClickedOnBlock;
 import net.mcreator.coles_randomness.procedure.ProcedureRocketJumperRightClickedInAir;
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -53,7 +53,7 @@ public class ItemRocketJumper extends ElementsColesRandomnessMod.ModElement {
 			maxStackSize = 1;
 			setUnlocalizedName("rocketjumper");
 			setRegistryName("rocketjumper");
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.MISC);
 		}
 
 		@Override

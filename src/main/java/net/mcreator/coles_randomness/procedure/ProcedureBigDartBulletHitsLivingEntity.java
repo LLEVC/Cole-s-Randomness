@@ -34,7 +34,7 @@ public class ProcedureBigDartBulletHitsLivingEntity extends ElementsColesRandomn
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
 		if (!world.isRemote) {
-			world.createExplosion(null, (int) x, (int) y, (int) z, (float) 1, true);
+			world.createExplosion(null, (int) x, (int) y, (int) z, (float) 5, true);
 		}
 	}
 }

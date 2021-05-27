@@ -19,10 +19,13 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.EnumAction;
+import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.entity.projectile.EntityTippedArrow;
 import net.minecraft.entity.projectile.EntityArrow;
 import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
 import net.minecraft.creativetab.CreativeTabs;
@@ -35,6 +38,8 @@ import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import com.google.common.collect.Multimap;
 
 @ElementsColesRandomnessMod.ModElement.Tag
 public class ItemZapper extends ElementsColesRandomnessMod.ModElement {
@@ -70,12 +75,24 @@ public class ItemZapper extends ElementsColesRandomnessMod.ModElement {
 	public static class RangedItem extends Item {
 		public RangedItem() {
 			super();
-			setMaxDamage(100);
+			setMaxDamage(10000);
 			setFull3D();
 			setUnlocalizedName("zapper");
 			setRegistryName("zapper");
 			maxStackSize = 1;
 			setCreativeTab(CreativeTabs.COMBAT);
+		}
+
+		@Override
+		public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
+			Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);
+			if (slot == EntityEquipmentSlot.MAINHAND) {
+				multimap.put(SharedMonsterAttributes.ATTACK_DAMAGE.getName(),
+						new AttributeModifier(ATTACK_DAMAGE_MODIFIER, "Ranged item modifier", (double) 6, 0));
+				multimap.put(SharedMonsterAttributes.ATTACK_SPEED.getName(),
+						new AttributeModifier(ATTACK_SPEED_MODIFIER, "Ranged item modifier", -2.4, 0));
+			}
+			return multimap;
 		}
 
 		@Override
@@ -94,8 +111,7 @@ public class ItemZapper extends ElementsColesRandomnessMod.ModElement {
 				int y = (int) entity.posY;
 				int z = (int) entity.posZ;
 				world.playSound((EntityPlayer) null, (double) x, (double) y, (double) z,
-						(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY
-								.getObject(new ResourceLocation(("entity.arrow.shoot"))),
+						(net.minecraft.util.SoundEvent) net.minecraft.util.SoundEvent.REGISTRY.getObject(new ResourceLocation(("block.slime.break"))),
 						SoundCategory.NEUTRAL, 1, 1f / (itemRand.nextFloat() * 0.5f + 1f) + (power / 2));
 				entityarrow.pickupStatus = EntityArrow.PickupStatus.DISALLOWED;
 				if (!world.isRemote)
@@ -142,7 +158,6 @@ public class ItemZapper extends ElementsColesRandomnessMod.ModElement {
 			World world = this.world;
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);

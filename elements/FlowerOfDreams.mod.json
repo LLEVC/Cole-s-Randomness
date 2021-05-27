@@ -1,15 +1,20 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "plant",
   "definition": {
     "renderType": 12,
     "texture": "flowerofdreams",
     "customModelName": "Cross model",
+    "tintType": "No tint",
+    "isItemTinted": false,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 2,
     "doublePlantGenerationType": "Flower",
+    "customBoundingBox": false,
+    "disableOffset": false,
+    "boundingBoxes": [],
     "name": "Flower of Dreams",
     "specialInfo": [],
     "creativeTab": {
@@ -17,7 +22,7 @@
     },
     "hardness": 0.01,
     "resistance": 2.0,
-    "luminance": 0.0,
+    "luminance": 0,
     "unbreakable": false,
     "soundOnStep": {
       "value": "GROUND"
@@ -39,6 +44,9 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
+    "jumpFactor": 1.0,
+    "speedFactor": 1.0,
+    "canBePlacedOn": [],
     "frequencyOnChunks": 20,
     "spawnWorldTypes": [
       "End",

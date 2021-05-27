@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "coles_randomness:opicon"
+    },
+    "title": {
+      "translate": "advancements.welcome_to_coles_randomness_advancement.title"
+    },
+    "description": {
+      "translate": "advancements.welcome_to_coles_randomness_advancement.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcome_to_coles_randomness_advancement": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "coles_randomness:ritegemrecipe"
+    ]
+  },
+  "parent": "minecraft:adventure/root"
+}

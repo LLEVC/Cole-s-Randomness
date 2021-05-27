@@ -1,0 +1,29 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Nether Star --> Soul",
+          "onClick": {
+            "name": "TradingFunction"
+          },
+          "width": 125,
+          "height": 20,
+          "name": "Nether Star --> Soul",
+          "x": 149,
+          "y": 44
+        }
+      }
+    ]
+  }
+}

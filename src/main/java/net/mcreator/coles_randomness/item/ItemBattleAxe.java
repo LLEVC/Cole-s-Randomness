@@ -46,8 +46,8 @@ public class ItemBattleAxe extends ElementsColesRandomnessMod.ModElement {
 				.newHashSet(new Block[]{Blocks.PLANKS, Blocks.BOOKSHELF, Blocks.LOG, Blocks.LOG2, Blocks.CHEST, Blocks.PUMPKIN, Blocks.LIT_PUMPKIN,
 						Blocks.MELON_BLOCK, Blocks.LADDER, Blocks.WOODEN_BUTTON, Blocks.WOODEN_PRESSURE_PLATE});
 		protected ItemToolCustom() {
-			super(EnumHelper.addToolMaterial("BATTLEAXE", 1, 800, 4f, 2f, 2), effective_items_set);
-			this.attackDamage = 2f;
+			super(EnumHelper.addToolMaterial("BATTLEAXE", 1, 5000, 4f, 4f, 2), effective_items_set);
+			this.attackDamage = 4f;
 			this.attackSpeed = -1.2f;
 		}
 

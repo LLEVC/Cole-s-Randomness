@@ -27,6 +27,7 @@ import net.minecraft.entity.player.EntityPlayerMP;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.Entity;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -35,7 +36,6 @@ import net.minecraft.client.model.ModelBox;
 import net.minecraft.client.model.ModelBase;
 
 import net.mcreator.coles_randomness.procedure.ProcedureBigDartBulletHitsLivingEntity;
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -79,7 +79,7 @@ public class ItemBigDart extends ElementsColesRandomnessMod.ModElement {
 			setUnlocalizedName("big_dart");
 			setRegistryName("big_dart");
 			maxStackSize = 64;
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.COMBAT);
 		}
 
 		@Override
@@ -143,23 +143,6 @@ public class ItemBigDart extends ElementsColesRandomnessMod.ModElement {
 
 		public EntityArrowCustom(World worldIn, EntityLivingBase shooter) {
 			super(worldIn, shooter);
-		}
-
-		@Override
-		public void onCollideWithPlayer(EntityPlayer entity) {
-			super.onCollideWithPlayer(entity);
-			int x = (int) this.posX;
-			int y = (int) this.posY;
-			int z = (int) this.posZ;
-			World world = this.world;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				ProcedureBigDartBulletHitsLivingEntity.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

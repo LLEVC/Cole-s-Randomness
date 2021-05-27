@@ -42,7 +42,7 @@ public class ItemInfSword extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("INFSWORD", 1, 0, 10f, 96f, 5)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("INFSWORD", 1, 0, 10f, 99996f, 5)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);

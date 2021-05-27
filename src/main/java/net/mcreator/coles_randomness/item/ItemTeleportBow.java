@@ -19,7 +19,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.EnumAction;
-import net.minecraft.init.Items;
 import net.minecraft.init.Enchantments;
 import net.minecraft.entity.projectile.EntityTippedArrow;
 import net.minecraft.entity.projectile.EntityArrow;
@@ -66,7 +65,8 @@ public class ItemTeleportBow extends ElementsColesRandomnessMod.ModElement {
 	@Override
 	public void preInit(FMLPreInitializationEvent event) {
 		RenderingRegistry.registerEntityRenderingHandler(EntityArrowCustom.class, renderManager -> {
-			return new RenderSnowball(renderManager, new ItemStack(Items.ENDER_PEARL, (int) (1)).getItem(), Minecraft.getMinecraft().getRenderItem());
+			return new RenderSnowball(renderManager, new ItemStack(ItemTeleportArrow.block, (int) (1)).getItem(),
+					Minecraft.getMinecraft().getRenderItem());
 		});
 	}
 	public static class RangedItem extends Item {

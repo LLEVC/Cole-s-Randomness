@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "gun",
   "definition": {
     "renderType": 1,
@@ -15,14 +15,14 @@
       "value": ""
     },
     "shootConstantly": false,
-    "usageCount": 100,
+    "usageCount": 10000,
     "actionSound": {
-      "value": "entity.arrow.shoot"
+      "value": "block.slime.break"
     },
     "hasGlow": false,
     "animation": "bow",
-    "enableMeleeDamage": false,
-    "damageVsEntity": 5.0,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 10.0,
     "bulletPower": 3.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 5,

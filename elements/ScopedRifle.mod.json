@@ -1,0 +1,40 @@
+{
+  "_fv": 18,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "scoped_rifle",
+    "customModelName": "Normal",
+    "name": "Scoped Rifle",
+    "specialInfo": [
+      "BOOM",
+      "HEADSHOT!"
+    ],
+    "creativeTab": {
+      "value": "COMBAT"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": "CUSTOM:RifleAmmo"
+    },
+    "shootConstantly": false,
+    "usageCount": 1000,
+    "actionSound": {
+      "value": "block.anvil.break"
+    },
+    "hasGlow": false,
+    "animation": "bow",
+    "enableMeleeDamage": false,
+    "damageVsEntity": 0.0,
+    "bulletPower": 3.0,
+    "bulletDamage": 5.0,
+    "bulletKnockback": 2,
+    "bulletParticles": true,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.AIR"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

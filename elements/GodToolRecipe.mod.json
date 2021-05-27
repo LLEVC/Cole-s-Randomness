@@ -1,0 +1,46 @@
+{
+  "_fv": 18,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:FlowerOfDreams"
+      },
+      {
+        "value": "CUSTOM:DemonGem"
+      },
+      {
+        "value": "CUSTOM:FlowerOfDreams"
+      },
+      {
+        "value": "CUSTOM:GodGem"
+      },
+      {
+        "value": "CUSTOM:DemonGem"
+      },
+      {
+        "value": "CUSTOM:GodGem"
+      },
+      {
+        "value": "CUSTOM:NeedleBlood"
+      },
+      {
+        "value": "CUSTOM:RubyGem"
+      },
+      {
+        "value": "CUSTOM:NeedleBlood"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:GodsDimension"
+    },
+    "name": "god_tool_recipe",
+    "namespace": "mod"
+  }
+}

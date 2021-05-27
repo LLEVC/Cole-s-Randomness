@@ -117,12 +117,7 @@ public class GuiTrade extends ElementsColesRandomnessMod.ModElement {
 			return itemstack;
 		}
 
-		@Override /**
-					 * Merges provided ItemStack with the first avaliable one in the
-					 * container/player inventor between minIndex (included) and maxIndex
-					 * (excluded). Args : stack, minIndex, maxIndex, negativDirection. /!\ the
-					 * Container implementation do not check if the item is valid for the slot
-					 */
+		@Override
 		protected boolean mergeItemStack(ItemStack stack, int startIndex, int endIndex, boolean reverseDirection) {
 			boolean flag = false;
 			int i = startIndex;

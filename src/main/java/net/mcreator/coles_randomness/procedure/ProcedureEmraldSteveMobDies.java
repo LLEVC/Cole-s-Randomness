@@ -2,8 +2,8 @@ package net.mcreator.coles_randomness.procedure;
 
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.init.Blocks;
 
+import net.mcreator.coles_randomness.block.BlockCompressedEmeraldBlockLol;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 import java.util.Map;
@@ -35,6 +35,6 @@ public class ProcedureEmraldSteveMobDies extends ElementsColesRandomnessMod.ModE
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), Blocks.EMERALD_BLOCK.getDefaultState(), 3);
+		world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlockCompressedEmeraldBlockLol.block.getDefaultState(), 3);
 	}
 }

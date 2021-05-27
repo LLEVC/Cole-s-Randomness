@@ -1,5 +1,5 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "gun",
   "definition": {
     "renderType": 0,
@@ -29,7 +29,7 @@
     "bulletParticles": false,
     "bulletIgnitesFire": false,
     "bulletItemTexture": {
-      "value": "Items.ENDER_PEARL"
+      "value": "CUSTOM:TeleportArrow"
     },
     "bulletModel": "Default",
     "customBulletModelTexture": "",

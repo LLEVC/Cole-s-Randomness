@@ -80,17 +80,15 @@ public class BlockVendingMachine extends ElementsColesRandomnessMod.ModElement {
 		@Override
 		public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
 			switch ((EnumFacing) state.getValue(BlockHorizontal.FACING)) {
-				case UP :
-				case DOWN :
 				case SOUTH :
 				default :
-					return new AxisAlignedBB(1D, 0D, 1D, 0D, 2D, 0D);
+					return new AxisAlignedBB(0, 0, 0, 0, 0, 0).union(new AxisAlignedBB(16, 0, 16, 0, 32, 0));
 				case NORTH :
-					return new AxisAlignedBB(0D, 0D, 0D, 1D, 2D, 1D);
-				case WEST :
-					return new AxisAlignedBB(0D, 0D, 1D, 1D, 2D, 0D);
+					return new AxisAlignedBB(0, 0, 0, 0, 0, 0).union(new AxisAlignedBB(0, 0, 0, 16, 32, 16));
 				case EAST :
-					return new AxisAlignedBB(1D, 0D, 0D, 0D, 2D, 1D);
+					return new AxisAlignedBB(0, 0, 0, 0, 0, 0).union(new AxisAlignedBB(16, 0, 0, 0, 32, 16));
+				case WEST :
+					return new AxisAlignedBB(0, 0, 0, 0, 0, 0).union(new AxisAlignedBB(0, 0, 16, 16, 32, 0));
 			}
 		}
 

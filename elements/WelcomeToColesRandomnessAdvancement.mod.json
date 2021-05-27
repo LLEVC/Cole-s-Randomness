@@ -1,0 +1,27 @@
+{
+  "_fv": 18,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Welcome!",
+    "achievementDescription": "Welcome to Cole's Randomness!",
+    "achievementIcon": {
+      "value": "CUSTOM:OPicon"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "RiteGemRecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 1,
+    "achievementType": "goal",
+    "parent": {
+      "value": "adventure/root"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"tick\" x=\"45\" y=\"89\"><next><block type=\"advancement_trigger\" deletable=\"false\"></block></next></block></xml>"
+  }
+}

@@ -30,12 +30,12 @@ public class ProcedureNeedlePaperBloodRightClickedInAir extends ElementsColesRan
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(((EntityPlayer) entity), _setstack);
 		}
-		if (entity instanceof EntityPlayer)
-			((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemNeedlePaperBlood.block, (int) (1)).getItem(), -1, (int) 1, null);
 		if (entity instanceof EntityPlayer) {
 			ItemStack _setstack = new ItemStack(ItemNeedle.block, (int) (1));
 			_setstack.setCount(1);
 			ItemHandlerHelper.giveItemToPlayer(((EntityPlayer) entity), _setstack);
 		}
+		if (entity instanceof EntityPlayer)
+			((EntityPlayer) entity).inventory.clearMatchingItems(new ItemStack(ItemNeedlePaperBlood.block, (int) (1)).getItem(), -1, (int) 1, null);
 	}
 }

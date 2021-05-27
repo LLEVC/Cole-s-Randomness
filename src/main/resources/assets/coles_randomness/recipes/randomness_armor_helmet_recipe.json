@@ -1,0 +1,29 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:randomness_ingot"
+    },
+    "1": {
+      "item": "coles_randomness:randomness_ingot"
+    },
+    "2": {
+      "item": "coles_randomness:randomness_ingot"
+    },
+    "3": {
+      "item": "coles_randomness:randomness_ingot"
+    },
+    "5": {
+      "item": "coles_randomness:randomness_ingot"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:randomness_armorhelmet",
+    "count": 1
+  }
+}

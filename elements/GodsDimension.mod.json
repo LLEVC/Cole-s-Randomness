@@ -1,24 +1,7 @@
 {
-  "_fv": 13,
+  "_fv": 18,
   "_type": "dimension",
   "definition": {
-    "portalFrame": {
-      "value": "CUSTOM:GodPortalFrame"
-    },
-    "portalParticles": {
-      "value": "EXPLOSION_NORMAL"
-    },
-    "portalLuminance": 0.0,
-    "portalSound": {
-      "value": "block.portal.ambient"
-    },
-    "igniterName": "Tool of the Gods",
-    "igniterTab": {
-      "value": "TOOLS"
-    },
-    "texture": "portal igniter",
-    "portalTexture": "portal2",
-    "enablePortal": true,
     "biomesInDimension": [
       {
         "value": "plains"
@@ -53,11 +36,27 @@
     },
     "canRespawnHere": true,
     "hasFog": true,
-    "hasWeather": true,
     "isDark": false,
     "doesWaterVaporize": false,
     "sleepResult": "BED_EXPLODES",
     "hasSkyLight": true,
-    "imitateOverworldBehaviour": true
+    "imitateOverworldBehaviour": true,
+    "portalFrame": {
+      "value": "CUSTOM:GodPortalFrame"
+    },
+    "portalParticles": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Tool of the Gods",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "portal igniter",
+    "portalTexture": "portal2",
+    "enablePortal": true
   }
 }

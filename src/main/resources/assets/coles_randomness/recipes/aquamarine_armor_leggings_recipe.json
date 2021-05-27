@@ -1,0 +1,36 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5",
+    "6 8"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "1": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "2": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "3": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "5": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "6": {
+      "item": "coles_randomness:aquamarine"
+    },
+    "8": {
+      "item": "coles_randomness:aquamarine"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:aquamarine_armorlegs",
+    "count": 1
+  }
+}

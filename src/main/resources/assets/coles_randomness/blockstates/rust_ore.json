@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "normal": {
+      "model": "coles_randomness:rust_ore"
+    }
+  }
+}

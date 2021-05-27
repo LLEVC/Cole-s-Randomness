@@ -12,12 +12,12 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.Block;
 
-import net.mcreator.coles_randomness.creativetab.TabOpCreativeItems;
 import net.mcreator.coles_randomness.ElementsColesRandomnessMod;
 
 @ElementsColesRandomnessMod.ModElement.Tag
@@ -50,7 +50,7 @@ public class BlockDemonPlanks extends ElementsColesRandomnessMod.ModElement {
 			setResistance(3F);
 			setLightLevel(0F);
 			setLightOpacity(255);
-			setCreativeTab(TabOpCreativeItems.tab);
+			setCreativeTab(CreativeTabs.BUILDING_BLOCKS);
 		}
 
 		@Override
