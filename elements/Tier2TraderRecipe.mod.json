@@ -10,37 +10,37 @@
     "recipeShapeless": false,
     "recipeSlots": [
       {
-        "value": "CUSTOM:Poop"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "CUSTOM:RadiationIngot"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "CUSTOM:RadiationIngot"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "CUSTOM:TraderBlock"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "CUSTOM:RadiationIngot"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "Items.DIAMOND"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "CUSTOM:RadiationIngot"
       },
       {
-        "value": "CUSTOM:Poop"
+        "value": "Items.DIAMOND"
       }
     ],
     "recipeReturnStack": {
-      "value": "CUSTOM:PoopBlock"
+      "value": "CUSTOM:TraderBlockTier2"
     },
-    "name": "poopblockrecipe",
+    "name": "tier_2_trader_recipe",
     "namespace": "mod"
   }
 }

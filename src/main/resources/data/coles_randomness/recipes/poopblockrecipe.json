@@ -1,0 +1,42 @@
+{
+  "group": "coles_randomness",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "coles_randomness:poop"
+    },
+    "1": {
+      "item": "coles_randomness:poop"
+    },
+    "2": {
+      "item": "coles_randomness:poop"
+    },
+    "3": {
+      "item": "coles_randomness:poop"
+    },
+    "4": {
+      "item": "coles_randomness:poop"
+    },
+    "5": {
+      "item": "coles_randomness:poop"
+    },
+    "6": {
+      "item": "coles_randomness:poop"
+    },
+    "7": {
+      "item": "coles_randomness:poop"
+    },
+    "8": {
+      "item": "coles_randomness:poop"
+    }
+  },
+  "result": {
+    "item": "coles_randomness:poopblock",
+    "count": 1
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:big_axe",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:god_mushroom",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:pocket_knife_idle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:testmusic",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:powerball",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:scope",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:rifle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:catgun",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:needle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:big_dart",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:candle",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:vendingmachine",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:trader_block",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:gemofdreams",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:normalgon",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:normalgun",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:popcorngiver",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "coles_randomness:pizza_slice",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

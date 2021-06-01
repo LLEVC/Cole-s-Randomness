@@ -16,6 +16,7 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.NonNullList;
+import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.Item;
@@ -81,6 +82,11 @@ public class BlockGodMushroom extends ElementsColesRandomnessMod.ModElement {
 			setLightLevel(0F);
 			setUnlocalizedName("god_mushroom");
 			setRegistryName("god_mushroom");
+		}
+
+		@Override
+		public PathNodeType getAiPathNodeType(IBlockState state, IBlockAccess world, BlockPos pos) {
+			return PathNodeType.BLOCKED;
 		}
 
 		@Override

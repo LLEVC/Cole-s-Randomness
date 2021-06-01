@@ -38,6 +38,7 @@ import net.mcreator.coles_randomness.gui.GuiVendingGUI;
 import net.mcreator.coles_randomness.gui.GuiTrade;
 import net.mcreator.coles_randomness.gui.GuiSecretPopcornGiver;
 import net.mcreator.coles_randomness.gui.GuiLostSoul;
+import net.mcreator.coles_randomness.gui.GuiCompressGUI;
 
 import java.util.function.Supplier;
 import java.util.Random;
@@ -148,6 +149,8 @@ public class ElementsColesRandomnessMod implements IFuelHandler, IWorldGenerator
 				return new GuiVendingGUI.GuiContainerMod(world, x, y, z, player);
 			if (id == GuiLostSoul.GUIID)
 				return new GuiLostSoul.GuiContainerMod(world, x, y, z, player);
+			if (id == GuiCompressGUI.GUIID)
+				return new GuiCompressGUI.GuiContainerMod(world, x, y, z, player);
 			return null;
 		}
 
@@ -161,6 +164,8 @@ public class ElementsColesRandomnessMod implements IFuelHandler, IWorldGenerator
 				return new GuiVendingGUI.GuiWindow(world, x, y, z, player);
 			if (id == GuiLostSoul.GUIID)
 				return new GuiLostSoul.GuiWindow(world, x, y, z, player);
+			if (id == GuiCompressGUI.GUIID)
+				return new GuiCompressGUI.GuiWindow(world, x, y, z, player);
 			return null;
 		}
 	}

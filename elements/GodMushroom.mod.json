@@ -4,11 +4,14 @@
   "definition": {
     "renderType": 12,
     "texture": "godmushroom",
+    "textureBottom": "",
     "customModelName": "Cross model",
+    "itemTexture": "",
+    "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "growapableSpawnType": "Cave",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -16,7 +19,9 @@
     "disableOffset": false,
     "boundingBoxes": [],
     "name": "God Mushroom",
-    "specialInfo": [],
+    "specialInfo": [
+      "Confuses mobs"
+    ],
     "creativeTab": {
       "value": "DECORATIONS"
     },
@@ -27,7 +32,7 @@
     "soundOnStep": {
       "value": "PLANT"
     },
-    "useLootTableForDrops": false,
+    "useLootTableForDrops": true,
     "customDrop": {
       "value": ""
     },
@@ -41,7 +46,7 @@
       "value": ""
     },
     "offsetType": "XZ",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "BLOCKED",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,

@@ -34,7 +34,7 @@ public class ItemSapphireSword extends ElementsColesRandomnessMod.ModElement {
 
 	@Override
 	public void initElements() {
-		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SAPPHIRE_SWORD", 6, 1164, 12f, 2f, 42)) {
+		elements.items.add(() -> new ItemSword(EnumHelper.addToolMaterial("SAPPHIRE_SWORD", 6, 2031, 12f, 3f, 42)) {
 			@Override
 			public Multimap<String, AttributeModifier> getItemAttributeModifiers(EntityEquipmentSlot slot) {
 				Multimap<String, AttributeModifier> multimap = super.getItemAttributeModifiers(slot);

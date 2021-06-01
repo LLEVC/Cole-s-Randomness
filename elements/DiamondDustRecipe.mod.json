@@ -1,5 +1,5 @@
 {
-  "_fv": 10,
+  "_fv": 18,
   "_type": "recipe",
   "definition": {
     "recipeType": "Crafting",
@@ -13,10 +13,10 @@
         "value": ""
       },
       {
-        "value": ""
+        "value": "Blocks.STONE"
       },
       {
-        "value": "CUSTOM:OreChisle"
+        "value": ""
       },
       {
         "value": ""

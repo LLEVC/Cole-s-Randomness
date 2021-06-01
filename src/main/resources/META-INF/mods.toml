@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="Not specified"
+
+[[mods]]
+modId="coles_randomness"
+version="2"
+displayName="Cole's RANDOMNESS"
+credits="Credits to Users BlitzTDM,EMDS,RedstoneMast3r, and Kolbe on discord and PYLO for making MCreator"
+displayURL="https://mcreator.net"
+authors="LLEVCole"
+description='''
+An Epic but Weird Mod
+'''
+
+[[dependencies.coles_randomness]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,43 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 425,
+    "height": 240,
+    "inventoryOffsetX": 128,
+    "inventoryOffsetY": 40,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "9 Emeralds = 1 Compressed Emerald",
+          "onClick": {
+            "name": "CompressEmeraldFunc"
+          },
+          "width": 215,
+          "height": 20,
+          "name": "9 Emeralds = 1 Compressed Emerald",
+          "x": 222,
+          "y": 4
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "9 Emerald Blocks = Compressed Emerald Block",
+          "onClick": {
+            "name": "CompressEmeraldBlock"
+          },
+          "width": 240,
+          "height": 20,
+          "name": "9 Emerald Blocks = Compressed Emerald Block",
+          "x": 4,
+          "y": 4
+        }
+      }
+    ]
+  }
+}
